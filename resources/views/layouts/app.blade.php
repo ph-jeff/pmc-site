@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/partnership.css">
 
-    @livewireStyles
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     {{-- tailwind --}}
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <!-- Top Navigation Bar -->
-    <div class="h-[4vh] md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-[#860909]">
+    <div class="h-6 md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-danger">
         <div class=" flex w-[35%] md:w-[25%] ">
             <ul class="flex items-center gap-x-1 md:gap-x-3">
                 <li class="font-semibold text-[.7rem] text-white" >Stay connected</li>
@@ -152,6 +153,6 @@
             </div>
         </div>
     </footer>
-    @livewireScripts
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

@@ -5,15 +5,15 @@
 
 @section('main')
 <!-- Sticky Navigation Bar -->
-<nav class="h-[13vh] flex justify-around sticky top-0 z-50 bg-black">
+<nav class="md:h-20 flex justify-around sticky top-0 z-50 bg-black">
     <div class="h-full w-[20%] flex items-center">
         <a href="">
             <img class="" src="img/pmc_logo.png" alt="logo" >
         </a>
     </div>
-    <div class="w-[50%] flex items-center justify-end">
+    <div class="w-6/12 flex items-center justify-end">
         <ul class="flex">        
-            <li class="p-3 px-5 bg-[#860909]"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
+            <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
             <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
             <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
             <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/news"> News </a></li>

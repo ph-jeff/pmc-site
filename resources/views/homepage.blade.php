@@ -5,40 +5,40 @@
 
 @section('main')
     <!-- Sticky Navigation Bar (Website View - homepage) -->
-    <nav class="hidden md:min-h-[91px] md:h-[13vh] md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
+    <nav class="hidden md:min-h-91px md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
         <div class="h-full w-[20%] flex items-center">
             <a href="">
                 <img class="" src="img/pmc_logo.png" alt="logo" >
             </a>
         </div>
         <div class="w-[50%] flex items-center justify-end">
-            <ul class="flex">        
-                <li class="p-3 px-5 bg-[#860909]"><a class="text-white text-base font-semibold " href="/"> Home </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+            <ul class="flex">
+                <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold " href="/"> Home </a></li>
+                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
+                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
+                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
+                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
+                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
             </ul>
         </div>
     </nav>
 
     <main >
         <!-- First Section (Get Started) -->
-        <div class=" min-h-[86vh] md:min-h-[500px] md:h-[82vh] flex justify-center items-end">
-            <div class="imgSlider relative h-[86vh] md:h-[82vh] md:min-h-[500px] w-[100%] flex justify-center items-start">
-                <div class="relative h-full md:h-[50%] w-[90%] md:w-[70%] md:mt-[6%] flex montserrat text-center text-white">
-                    <div class="absolute min-h-[270px] h-[40%] md:top-[5%] md:h-full w-full top-[5%] ">
+        <div class=" min-h-screen md:min-h-500px md:h-screen flex justify-center items-end">
+            <div class="imgSlider relative h-screen h-screen md:min-h-500px w-full flex justify-center items-start">
+                <div class="relative h-full md:h-6/12 w-9/12 md:w-9/12 md:mt-[6%] flex montserrat text-center text-white">
+                    <div class="absolute md:mt-20 w-full top-[5%]">
                         <div class="h-[40%] md:h-[20%] flex items-end justify-center"> 
-                            <h1 class=" font-bold tracking-wider text-2xl md:text-5xl">Insert Caption Here!</h1>
+                            <h1 class=" font-bold tracking-wider text-2xl md:text-6xl">Insert Caption Here!</h1>
                         </div>
-                        <div class="h-[30%] md:h-[30%] flex justify-center items-center">
-                            <div class=" w-full md:w-[80%] flex justify-center">
-                                <p class=" flex justify-center text-[1rem] md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex justify-center items-center font-montserrat mt-4 md:mt-6">
+                            <div class=" w-full md:w-4/5 flex justify-center">
+                                <p class=" flex justify-center md:text-xl font-montserrat font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
-                        <div class=" h-[30%] md:h-[20%] w-full flex justify-center items-start">
-                            <a href="/about" class="top-[380px] h-[38px] md:h-[76%] w-[106px] md:w-[15%] font-bebas text:[16px] md:text-[1.3rem] font-hairline tracking-[0.12em] btn rounded-sm bg-gradient-to-r from-[#5E0505] to-[#9A0F0F] flex  items-center justify-center shadow-md shadow-[#860909]/[30%] hover:bg-none hover:bg-black hover:-translate-x-0 hover:scale-105 duration-300">GET STARTED</a>
+                        <div class="mt-3 h-1/4 md:h-1/4 w-full flex justify-center items-start">
+                            <a href="/about" class="p-2.5 px-5 rounded bg-danger hover:bg-red-900 text-2xl font-bebas tracking-widest border-2 border-red-900">GET STARTED</a>
                         </div>
                     </div>
                 </div>
