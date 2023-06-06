@@ -84,14 +84,19 @@
         </button>
     </nav>
     {{-- Sticky messenger icon --}}
-    <div class="w-[99%] md:min-h-[55px] h-[5vh] flex justify-end bottom-2 z-50 fixed bottom-0 rounded-full">
+    {{-- <div class="w-[99%] md:min-h-[55px] h-[5vh] flex justify-end bottom-2 z-50 fixed bottom-0 rounded-full">
         <div class="w-[9%] md:w-[4%] bg-white flex items-center justify-center rounded-full drop-shadow-lg shadow-gray-300">
-            <a href="" class="w-[90%] flex items-center justify-center">
+            <a href="" class="w-[90%] flex items-center justify-center m-5 bg-danger">
                 <img src="img/icons/messenger.png" class="w-[75%]" alt="messenger">
             </a>
         </div>
-    </div>
+    </div> --}}
 
+    <div class="z-10 fixed bottom-0 right-0 p-4 h-24 w-24">
+        <div class="rounded-full p-2 bg-white drop-shadow-lg">
+			<img src="img/icons/messenger.png" class="w-[75%]" alt="messenger">
+        </div>
+    </div>
 
     @yield('main')
     
@@ -141,7 +146,7 @@
         <div class="h-[75px] md:h-[40%] pt-3 md:pt-0">
             <div class="h-2/4 w-full flex justify-center ">
                 <ul class="flex items-end mb-1 md:mb-3 gap-x-10 font-montserrat text-[.5rem] md:text-[.65rem] text-white">
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="">Terms and Condition</a></li>
                     <li><a href="">Privacy</a></li>
                 </ul>
