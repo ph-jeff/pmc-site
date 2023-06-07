@@ -21,13 +21,13 @@
         </ul>
     </div>
 </nav> 
-<div class="mx-[0%] lg:mx-[9%]">
-    <div class="h-[7vh] md:h-[30vh] flex justify-center items-center" >
-        <h1 class="font-bebas text-4xl md:text-5xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5E0505] to-[#9A0F0F]"> NEWS AND UPDATE </h1>
+<div class="mx-2 lg:mx-40" >
+    <div class="h-20 md:h-40 flex justify-center items-center" >
+        <h1 class="font-bebas text-4xl md:text-5xl text-center font-bold "> NEWS AND UPDATE </h1>
     </div>
     {{-- Sort --}}
-    <div class="h-[10vh] flex items-center justify-between ">
-        <div class="h-[80%] flex items-center gap-x-1 ml-2 md:ml-0">
+    <div class="h-16 flex items-center justify-between " >
+        <div class="h-4/5 flex items-center gap-x-1 ml-2 md:ml-0">
             <span >Show</span>
             <select class="border border-gray-300 rounded px-2 py-1 w-[60px] h-[]">
                 <option value="">0</option>
@@ -37,47 +37,47 @@
                 <option value="">50 </option>
             </select>
         </div>
-        <div class="relative w-[45%] lg:w-[25%] mr-2 md:mr-0"> 
-            <input type="text" placeholder="Search..." class="w-[100%] h-[42px] border border-gray-300 shadow-md shadow-gray-300 rounded-full px-4 py-2 focus:outline-none ">
+        <div class="relative  mr-2 md:mr-0" > 
+            <input type="text" placeholder="Search..." class="w-full h-10 border border-gray-300 shadow-md shadow-gray-300 rounded-full px-4 py-2 focus:outline-none ">
             <button class="absolute w-6 right-2 top-2"> <img src="img/search.png" class=" opacity-80" alt=""></button>
         </div>
     </div>
 
     <!-- Row 1 -->
-    <div class="h-[auto] md:h-auto flex justify-around md:justify-between  items-center flex-col md:flex-row" >
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+    <div class="h-auto md:h-auto flex justify-around md:justify-between  items-center flex-col md:flex-row" >
+        <div class="h-72 md:h-96 mt-5 md:mt-0 w-full  rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/news_image_1.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
         </div>
 
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+        <div class="h-72 md:h-96 mt-5 md:mt-0 w-full md:mx-16 rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/12.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
         </div>
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+        <div class="h-72 md:h-96 mt-5 md:mt-0 w-full  rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/17.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
@@ -85,40 +85,40 @@
     </div>
 
     <!-- Row 2 -->
-    <div class="h-[140vh] md:h-auto flex justify-around md:justify-between  items-center flex-col md:flex-row mt-1 md:mt-16 mb-16" >
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+    <div class="h-auto md:h-auto mt-5 md:mt-0 md:mt-16 md:mb-10 flex justify-around md:justify-between  items-center flex-col md:flex-row">
+        <div class="h-72 md:h-96 w-full  rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/14.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
         </div>
 
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+        <div class="h-72 md:h-96 mt-5 md:mt-0 w-full md:mx-16 rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/15.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
         </div>
-        <div class="h-[380px] md:h-[433px] w-[374px] md:w-[354px] rounded-2xl shadow-lg shadow-gray-200" >
+        <div class="h-72 md:h-96 mt-5 md:mt-0 mb-5 md:mb-0 w-full  rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
-            <div class=" h-[223px]  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full md:w-[354px]" src="img/news/16.jpg" alt="" srcset="">
+            <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
             </div>
-            <p class="text-[16px] md:text-[20px]  text-[#860909] font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-[14px] md:text-[16px] font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-[16px]">
+            <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             

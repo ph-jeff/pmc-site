@@ -37,6 +37,10 @@ theme: {
   },
   border: {
     'danger-darker': '#8a0000',
+  },
+  spacing: {
+    '82': '22rem',
+    
   }
 },
 plugins: [],

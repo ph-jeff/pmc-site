@@ -46,34 +46,36 @@
 
     }">
         
-        <div class="h-[10vh] md:h-[30vh] flex flex-col items-center bg-white/[75%]" >
-            <div class="h-[60%] flex justify-center items-end">
-                <h1 class="text-3xl md:text-5xl tracking-[5px] font-bebas text-transparent bg-clip-text bg-gradient-to-r from-[#5E0505] to-[#9A0F0F]">Our Team</h1>
+        <div class="h-24 md:h-48 flex flex-col items-center justify-center " style="border: 1px solid red">
+            <div class=" flex justify-center items-end" style="border: 1px solid red" >
+                <h1 class="text-3xl md:text-5xl tracking-widest font-bebas ">Our Team</h1>
             </div>
-            <div class="h-[40%]">
-                <p class="font-normal text-[15px] md:text-[24.87px] mt-10px md:mt-[28px] font-montserrat">THE MANAGEMENT</p>
+            <div class="" style="border: 1px solid red">
+                <p class="font-normal text-xl md:text-2xl mt-10px md:mt-7 font-montserrat">THE MANAGEMENT</p>
             </div>
         </div>
 
         <!-- THE MANAGEMENT -->
-        <div class="h-auto md:h-[65vh] flex justify-center bg-white/[75%]">
+        <div class="h-auto md:h-96 flex justify-center "  style="border: 1px solid black" >
             <div class=" h-auto w-5/6 md:flex md:justify-evenly md:items-center" >
                 <!-- SIR JVS -->
-                <div class="w-full flex justify-center">
-                    <div class="group w-[201px] md:w-[271px] h-[290px] md:h-[377px] flex flex-col items-center font-montserrat hover:bg-[#860909] hover:rounded-[1rem] hover:text-white" @click="JVS = true">
-                        <img class="rounded-full w-[250px] h-[250px] mt-[10px] group-hover:rounded-none group-hover:rounded-t-[1rem]" src="img/team/JVSb.png" alt="SIR JVS" >
-                        <p class="font-bold w-[207px] mt-[10px] text-[15px] md:text-[20px] text-center " >SIR JVS</p>
-                        <p class="position font-medium text-[14px] md:text-[16px] ">Chief Marketing Officer</p>
-                        <p class="position font-medium text-[14px] md:text-[16px]">Chief Finance Officer</p>
+                <div class="w-full flex justify-center" style="border: 1px solid green">
+                    <div class="group w-48 md:w-64 h-72 md:h-96 flex flex-col items-center font-montserrat hover:bg-red-800 hover:rounded-2xl hover:text-white" @click="JVS = true">
+                        <img class="rounded-full w-60 h-60 mt-2.5 group-hover:rounded-none group-hover:rounded-t-2xl" src="img/team/JVSb.png" alt="SIR JVS" >
+                        <p class="font-bold w-48 mt-2.5 text-3.5 md:text-5 text-center " >SIR JVS</p>
+                        <p class="position font-medium text-3.5 md:text-4 ">Chief Marketing Officer</p>
+                        <p class="position font-medium text-3.5 md:text-4">Chief Finance Officer</p>
                     </div>  
                 </div>
                 <!-- SIR PTS -->
-                <div class="w-full flex justify-center">
-                    <div class="group w-[201px] md:w-[271px] h-[270px] md:h-[377px] flex flex-col items-center font-montserrat hover:bg-[#860909] hover:rounded-[1rem] hover:text-white" @click="JVS = true">
-                        <img class="rounded-full w-[250px] h-[250px] mt-[10px] group-hover:rounded-none group-hover:rounded-t-[1rem]" src="img/team/PTSb.png" alt="SIR PTS" >
-                        <p class="font-bold w-[207px] mt-[10px] text-[15px] md:text-[20px] text-center " >SIR PTS</p>
-                        <p class="position font-medium  text-[14px] md:text-[16px] ">Chief Executive Officer</p>
-                    </div>
+                <div class="w-full flex justify-center" style="border: 1px solid green">
+                    <div class="group w-48 md:w-64 h-72 md:h-96 flex flex-col items-center font-montserrat hover:bg-red-800 hover:rounded-2xl hover:text-white" @click="JVS = true">
+                        <img class="rounded-full w-60 h-60 mt-2.5 group-hover:rounded-none group-hover:rounded-t-2xl" src="img/team/JVSb.png" alt="SIR JVS" >
+                        <p class="font-bold w-48 mt-2.5 text-3.5 md:text-5 text-center " >SIR PTS</p>
+                        <p class="position font-medium text-3.5 md:text-4 ">Chief Executive Officer</p>
+                        
+                        <p class="position font-medium text-3.5 md:text-4"></p>
+                    </div>  
                 </div>
                 <!-- MAAM JSS -->
                 <div class="w-full flex justify-center">
