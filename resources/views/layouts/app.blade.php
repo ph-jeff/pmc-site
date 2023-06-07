@@ -30,7 +30,7 @@
 </head>
 <body>
     <!-- Top Navigation Bar -->
-    <div class="h-6 md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-danger">
+    <div class="h-8 md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-danger">
         <div class=" flex w-[35%] md:w-[25%] ">
             <ul class="flex items-center gap-x-1 md:gap-x-3">
                 <li class="font-semibold text-[.7rem] text-white" >Stay connected</li>
@@ -92,11 +92,11 @@
         </div>
     </div> --}}
 
-    <div class="z-10 fixed bottom-0 right-0 p-4 h-24 w-24">
+    {{-- <div class="z-10 fixed bottom-0 right-0 p-4 h-24 w-24">
         <div class="rounded-full p-2 bg-white drop-shadow-lg">
 			<img src="img/icons/messenger.png" class="w-[75%]" alt="messenger">
         </div>
-    </div>
+    </div> --}}
 
     @yield('main')
     

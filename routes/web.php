@@ -34,11 +34,9 @@ Route::get('/news2', function () {
 Route::get('/career', function () {
     return view('career');
 });
-
 Route::get('/application-form', function () {
     return view('form/application_form');
 });
-
 Route::get('/career2', function () {
     return view('career-pagination/career2');
 });

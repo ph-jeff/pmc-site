@@ -21,170 +21,142 @@
       </ul>
   </div>
 </nav>
-    <main>
-      <div class="relative h-[14vh] md:h-[51vh]">
-        <img src="img/career/01.png" alt="Image" class="w-full h-full ">
-        <div class="absolute top-0 left-0 flex w-full h-full flex items-center justify-center">
-          <p class="text-white text-4xl md:text-6xl lg:text-8xl font-bebas">CAREER</p>
+<main>
+  <div class="relative h-44  md:h-96">
+    <img src="img/career/01.png" alt="Image" class="w-full h-full object-cover">
+    <div class="absolute top-0 left-0 flex w-full h-full flex items-center justify-center">
+      <p class="text-white text-4xl md:text-6xl lg:text-8xl font-bebas">CAREER</p>
+    </div>
+  </div>
+</main>
+<section class="h-auto lg:h-auto w-full font-montserrat background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg'); ">
+  <div class="w-full h-auto bg-white bg-opacity-75 flex justify-center">
+    <div class="relative h-auto sm:grid sm:grid-cols-2 md:columns-2 sm:gap-4 md:gap-4 lg:grid lg:grid-cols-1 lg:w-4/5 py-10 lg:pt-20 px-5 lg:px-10 bg-slate-900">
+      {{-- SALES --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/sales2.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
         </div>
-      </div>
-    </main>
-    <section class="md:h-[270vh] w-full font-montserrat  background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg'); ">
-      <div class="w-full  bg-white/[75%] flex justify-center">
-        <div class="relative  h-full md:w-[83%] py-5 md:py-20 px-5 md:px-10 ">
-          {{-- SALES --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/sales2.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class=" md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">SALES</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">SALES</h1>
           </div>
-          {{-- SALES APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[13.8%] md:top-[13%] ">
-            <div class="flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
           </div>
-          {{-- IT --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/IT.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class="md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">IT</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- IT APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[30%] md:top-[27.5%] ">
-            <div class="flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
-          </div>
-          {{-- HR --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/hr.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class="md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">HUMAN RESOURCES</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- HR APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[46.4%] md:top-[42%] ">
-            <div class="flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
-          </div>
-          {{-- MARKETING --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/marketing.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class="md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">MARKETING</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- MARKETING APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[62.5%] md:top-[56.5%]">
-            <div class="group flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
-          </div>
-          {{-- WAREHOUSE --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/warehousestaff.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class="md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">WAREHOUSE</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- WAREHOUSE APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[78.5%] md:top-[71%] ">
-            <div class="group flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
-          </div>
-          {{-- FINANCE --}}
-          <div class="h-[12%] max-w-full bg-white overflow-hidden mb-16">
-            <div class="group h-full w-full flex flex-col md:flex-row md:flex-nowrap ">
-              <div class="h-40 md:h-full w-full md:w-[25%]">
-                <img class="h-full w-full object-cover group-hover:scale-110" src="img/career/finance.jpg" alt="">
-              </div>
-              <div class=" h-full w-full md:w-[75%] md:py-0 md:px-5 md:pl-5">
-                <div class="md:h-[25%] flex items-center py-2 md:py-0">
-                  <a href="#" class="block text-xl md:text-1xl font-bold md:font-bold leading-tight text-[#860909]">FINANCE</a>
-                </div>
-                <div class="h-[75%]">
-                  <p class="leading-relaxed md:leading-loose text-sm md:text-base font-medium text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut   et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- FINANCE APPLY NOW BUTTON --}}
-          <div class="absolute right-8 top-[95%] md:top-[85.5%]">
-            <div class="group flex justify-end">
-              <a href="{{ url('application-form') }}"><button class="w-[120px] md:w-[120px] h-[40px] md:h-[45px] bg-black rounded-full text-slate-100 px-4 py-2 hover:bg-[#860909] mt-4">Apply Now</button></a>
-            </div>
-          </div>
-          {{-- PAGINATION --}}
-          <div class="h-[7%] w-full flex justify-center md:justify-end">
-            <div class="h-[80%] w-1/3 flex justify-center items-center gap-1 gap-x-2">
-              <a href="#" class="h-[60%] w-[25%] rounded flex justify-center items-center border text-red-900 opacity-50  ">
-                  <
-              </a>
-              <a href="{{ url('/career') }}" class="h-[60%] w-[15%] rounded flex justify-center items-center border text-white bg-red-900">
-                  1
-              </a>
-              <a href="{{ url('/career2') }}" class="h-[60%] w-[15%] rounded flex justify-center items-center border text-red-900">
-                  2
-              </a>
-              <a href="{{ url('/career3') }}" class="h-[60%] w-[15%] rounded flex justify-center items-center border text-red-900">
-                  3
-              </a>
-              <a href="{{ url('#') }}" class="h-[60%] w-[25%] rounded flex justify-center items-center border text-red-900">
-                  >   
-              </a>
-            </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
           </div>
         </div>
       </div>
-    </section>
+      {{-- IT --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/IT.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+        </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">IT</h1>
+          </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
+          </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      {{-- HR --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/hr.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+        </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">HUMAN RESOURCES</h1>
+          </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
+          </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      {{-- MARKETING --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/marketing.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+        </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">MARKETING</h1>
+          </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
+          </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      {{-- WAREHOUSE --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/warehousestaff.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+        </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">WAREHOUSE</h1>
+          </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
+          </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      {{--  FINANCE --}}
+      <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
+        <div class="h-40 lg:h-52 lg:w-4/12">
+          <img src="img/career/finance.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+        </div>
+        <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
+          <div>
+            <h1 class="font-montserrat text-lg font-bold text-red-900 ">FINANCE</h1>
+          </div>
+          <div class="pb-2">
+            <p class="font-montserrat text-justify lg:text-base lg:leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat atque voluptate nostrum et maiores consequuntur beatae ipsum voluptates? Ipsum accusantium dolor ab et veritatis autem quisquam voluptatem aliquid provident.</p>
+          </div>
+          <div class="flex justify-start lg:justify-end">
+            <a href="{{ url('application-form') }}" class="w-30 lg:w-30 h-full lg:h-full bg-black rounded-md lg:rounded-full text-slate-100 px-4 py-2 hover:bg-danger flex justify-center items-center text-white text-sm font-medium  ">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{-- PAGINATION --}}
+  <div class="h-20 w-full bg-white bg-opacity-75 flex justify-center">
+    <div class="h-full w-full sm:w-3/4 flex justify-center lg:justify-end">
+      <div class="h-14 w-11/12 sm:w-11/12 md:w-3/4 lg:w-1/3 flex justify-center md:justify-start items-center gap-1 gap-x-2">
+        <a href="#" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border border-gray-300 opacity-50">
+            <
+        </a>
+        <a href="{{ url('/career') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-white bg-danger">
+            1
+        </a>
+        <a href="{{ url('/career2') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-red-900">
+            2
+        </a>
+        <a href="{{ url('/career3') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-red-900">
+            3
+        </a>
+        <a href="{{ url('#') }}" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border-gray-300">
+            >   
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
  @endsection('main')
