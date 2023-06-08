@@ -151,4 +151,15 @@
             </div>
         </div>
     </div> --}}
+    <main>
+        <div class="relative h-44  md:h-96">
+          <img src="img/contact/contact1.png" alt="Image" class="w-full h-full object-cover">
+          <div class="absolute top-0 left-0 flex w-full h-full flex items-center justify-center">
+            <p class="text-white text-4xl md:text-6xl lg:text-8xl font-bebas">CONTACT</p>
+          </div>
+        </div>
+      </main>
+    <div>
+
+    </div>
 @endsection('main')
