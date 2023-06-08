@@ -161,7 +161,7 @@
                             3
                         </a>
                         <a href="#" class="h-[60%] w-[25%] rounded flex justify-center items-center border text-red-900">
-                            >
+
                         </a>
                     </div>
                 </div>
