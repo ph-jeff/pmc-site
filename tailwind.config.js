@@ -47,7 +47,16 @@ module.exports = {
   variants: {
     extend: {
       scale: ['hover'],
+      borderRadius: ['hover'],
     },
   },
-plugins: [],
+plugins: [
+  function ({ addUtilities }) {
+    addUtilities({
+      '.rounded-2xll:hover': {
+        'border-radius': '1rem',
+      },
+    }, ['responsive', 'hover']);
+  },
+],
 }

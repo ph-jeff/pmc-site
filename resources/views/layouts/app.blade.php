@@ -19,6 +19,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/partnership.css">
