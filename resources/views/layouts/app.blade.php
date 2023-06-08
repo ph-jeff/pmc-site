@@ -103,7 +103,7 @@
     
 
     <!-- Footer -->
-    <footer class="min-h-[150px] md:min-h-[350px] md:h-[60vh] bg-cover bg-norepeat" style="background-image: url(img/foot1.png)">
+    {{-- <footer class="min-h-[150px] md:min-h-[350px] md:h-[60vh] bg-cover bg-norepeat" style="background-image: url(img/foot1.png)">
         <div class="h-[75px] md:h-[60%] pt-2 md:pt-0 ">
             <div class="h-[55%] ">
                 <div class="h-[60%] flex justify-center items-end">
@@ -115,7 +115,7 @@
                     <p class="w-[90%] md:w-[60%] text-xs md:text-lg flex justify-center items-center ">Lorem ipsum dolor sit amet, consectetur adipiscing  </p>
                 </div>
             </div>
-            {{-- subscribe --}}
+            <!-- subscribe -->
             <div class="h-[45%] w-full text-1lg flex justify-center items-start md:pb-0 ">
                 <div class="h-full md:h-[50%] w-[50%] md:w-[27%] flex justify-center gap-x-2 mt-2 md:mt-3 ">
                     <div class="h-full w-[65%]">
@@ -157,6 +157,14 @@
                     <p class="font-montserrat text-[.5rem] md:text-[.65rem] text-white mt-1 md:mt-3">Copyright @ 2021, Philippian Marketing Corporation. All Rights Reserved.</p>
                 </div>
             </div>
+        </div>
+    </footer> --}}
+    <footer >
+        <div class="h-52 w-full bg-cover bg-norepeat" style="background-image: url(img/footer-top.png)">
+
+        </div>
+        <div class="h-32 w-full bg-cover bg-norepeat" style="background-image: url(img/footer-bottom.png)">
+
         </div>
     </footer>
     <script src="{{ mix('js/app.js') }}"></script>
