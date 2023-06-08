@@ -22,7 +22,7 @@
         </ul>
     </div>
 </nav>
-        <div class="h-[240vh]">
+        {{-- <div class="h-[240vh]">
             <div class="relative pb-[30%] md:hidden ">
                 <img src="img/contact/contact1.png" class="absolute h-full w-full object-cover" alt="">
                 <div class="absolute h-full w-full flex justify-center items-center">
@@ -32,7 +32,7 @@
             <div class="hidden md:h-[24%] md:bg-cover md:bg-norepeat md:bg-slate-900 md:flex md:justify-center " style="background-image: url('img/contact/contact1.png')">
             <h1 class="montserrat text-6xl font-bold text-white mt-32">CONTACT US</h1>
         </div>
-        {{-- <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');"> --}}
+        
         <div class=" h-[76%] background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
             <div class=" h-[63%] bg-white/[75%] ">
                 <div class="relative h-full flex justify-center md:-top-16 ">
@@ -150,5 +150,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection('main')
