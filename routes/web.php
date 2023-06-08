@@ -51,5 +51,8 @@ Route::get('/contact', function () {
 Route::get('/sample', function () {
     return view('sample');
 });
+Route::get('/newsample', function () {
+    return view('news_sample');
+});
 
 

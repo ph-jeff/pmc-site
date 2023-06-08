@@ -21,6 +21,11 @@ theme: {
     },
     spacing: {
       '30': '7.5rem',
+      '70': 'calc(70vh * (var(--viewport-height) / 100))',
+      '40': 'calc(40vh * (var(--viewport-height) / 100))',
+      '29': '29.313rem',
+      '50': '50%'
+
     },
     backgroundColor: theme => ({
       ...theme('colors'),

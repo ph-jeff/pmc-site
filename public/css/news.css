@@ -6,6 +6,9 @@
     background-color: rgb(88, 88, 88);
     background-blend-mode: multiply;
     animation: changeImage 20s  infinite;
+    width: 70%;
+    height: 70%;
+
 }
 @keyframes changeImage {
     0%{
