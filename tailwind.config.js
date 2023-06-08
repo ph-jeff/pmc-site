@@ -32,7 +32,7 @@ module.exports = {
         'primary': '#3490dc',
         'secondary': '#ffed4a',
         'danger': '#860909',
-      })
+      }),
     },
     margin: {
       sm: '8px',
@@ -47,16 +47,7 @@ module.exports = {
   variants: {
     extend: {
       scale: ['hover'],
-      borderRadius: ['hover'],
     },
   },
-plugins: [
-  function ({ addUtilities }) {
-    addUtilities({
-      '.rounded-2xll:hover': {
-        'border-radius': '1rem',
-      },
-    }, ['responsive', 'hover']);
-  },
-],
+plugins: [],
 }

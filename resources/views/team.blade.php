@@ -34,7 +34,7 @@
 
     SM: false,
     SSM: false,
-    PM: false,
+    ITH: false,
 
     OFM: false,
     HS: false,
@@ -49,7 +49,7 @@
         <div class="w-3/4 sm:w-3/5 md:w-full lg:w-10/12">
             <div class="flex justify-center">
                 <div class="text-center mt-5 md:mt-16">
-                    <h1 class="font-bebas text-3xl sm:text-4xl md:text-5xl md:tracking-widest">Our Team</h1>
+                    <h1 class="font-bebas text-3xl sm:text-4xl md:text-5xl md:tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Our Team</h1>
                     <h2 class="font-montserrat text-xl sm:text-2xl md:text-3xl mt-3 md:mt-6">THE MANAGEMENT</h2>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     </div>
                     <!-- SIR PTS -->
                     <div class="w-full flex justify-center rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0">
-                        <div class="group flex flex-col items-center font-montserrat " @click="JVS = true">
+                        <div class="group flex flex-col items-center font-montserrat " @click="PTS = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/team/PTSb.png" alt="SIR PTS" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR PTS</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Chief Executive Officer</p>
@@ -76,7 +76,7 @@
                     </div>
                     <!-- MAAM JSS -->
                     <div class="w-full flex justify-center rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0">
-                        <div class="group flex flex-col items-center font-montserrat " @click="JVS = true">
+                        <div class="group flex flex-col items-center font-montserrat " @click="JSS = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/team/JSSb.png" alt="MAAM JSS" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >MAAM JSS</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Chief Operation Officer</p>
@@ -100,14 +100,14 @@
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Human Resources Head</p>
                         </div>
                         <!-- SHA -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="SHA = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/SHA.png" alt="SIR SHA" >
                             <p class="text-lg font-montserrat font-bold text-center group-hover:text-white" >SIR SHA</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Arvin Feliciano</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Sales Head</p>
                         </div>
                         <!-- SHJE -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="SHJE = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/SHJE.png" alt="SIR SHJE" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR SHJE</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Joseph Edward Villareal</p>
@@ -118,21 +118,21 @@
                 <div class="h-auto flex justify-center mt-0 md:mt-10">
                     <div class="h-full w-5/6 gap-0 md:gap-14 flex flex-col md:flex-row justify-evenly items-center justify-center">
                         <!-- SM -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="SM = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/SM.png" alt="SIR SM" >
                             <p class="text-lg font-bold text-sm text-center group-hover:text-white" >SIR SM</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Anjolito Cruz</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Sales Manager</p>
                         </div>
                         <!-- SSM -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="SSM = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/SSM.png" alt="SIR SSM" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR SSM</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Obeth John Ocampo</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Sales Support Manager</p>
                         </div>
-                        <!-- PM -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <!-- ITH -->
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="ITH = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/PM.png" alt="SIR ITH" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR ITH</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Mike Arnold Solano</p>
@@ -144,21 +144,21 @@
                 <div class="h-auto flex justify-center mt-0 md:mt-10" >
                     <div class="h-full w-5/6 gap-0 md:gap-14 flex flex-col md:flex-row justify-evenly items-center justify-center">
                         <!-- OFM -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="OFM = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/OFM1.png" alt="SIR OFM" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR OFM</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Jay Emmanuel Goyal</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Order Fulfillment Manager</p>
                         </div>
                         <!-- HS -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HS = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/HS.png" alt="MAAM HS" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >MAAM HS</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Ms. Lyca Jean Lastimado</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Human Resources Supervisor</p>
                         </div>
                         <!-- MS -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="MS = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/MS.png" alt="SIR MS" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >SIR MS</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Justine Cristopher Eugenio</p>
@@ -170,21 +170,21 @@
                 <div class="h-auto flex justify-center mt-0 md:mt-10">
                     <div class="h-full w-5/6 gap-0 md:gap-14 flex flex-col md:flex-row justify-evenly items-center justify-center">
                         <!-- TL ELMER -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="ELMER = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/TL_ELMER.png" alt="TL ELMER" >
                             <p class="text-lg font-bold text-center group-hover:text-white">TL ELMER</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Mr. Elmer Roi Salapare</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">OFD Team Leader</p>
                         </div>
                         <!-- TL MAE -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="MAE = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/TL_MAE.png" alt="TL MAE" >
                             <p class="text-lg font-bold text-center group-hover:text-white" >TL MAE</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Ms. Laurence Mae Bathan</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Sales Team Leader</p>
                         </div>
                         <!-- TL ERIKA -->
-                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="HRH = true">
+                        <div class="group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2 mt-5 md:mt-0" @click="ERIKA = true">
                             <img class="rounded-full hover-rounded-2xl" src="img/officers/TL_ERIKA.png" alt="TL ERIKA" >
                             <p class="text-lg font-bold text-center group-hover:text-white">TL ERIKA</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Ms. Mary Erika Portugal</p>
