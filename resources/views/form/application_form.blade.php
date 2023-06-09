@@ -154,7 +154,7 @@
             </div>
             {{-- END APPLICATION FORM --}}
             <div class="flex justify-center gap-5 text-center mt-10 md:mt-10">
-                <button class="px-4 py-2 border border-black text-black w-40 h-42 hover:bg-red-900  hover:border-red-900 hover:text-white">Back</button>
+                <a href="/career" class="px-4 py-2 border border-black text-black w-40 h-42 hover:bg-red-900  hover:border-red-900 hover:text-white">Back</a>
                 <button type="submit" class="px-4 py-2  w-40 h-42 bg-black hover:bg-red-900 text-white ">
                     Submit  
                 </button>

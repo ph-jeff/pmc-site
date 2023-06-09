@@ -31,7 +31,7 @@
 </main>
 <section class="h-auto lg:h-auto w-full font-montserrat background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg'); ">
   <div class="w-full h-auto bg-white bg-opacity-75 flex justify-center">
-    <div class="relative h-auto sm:grid sm:grid-cols-2 md:columns-2 sm:gap-4 md:gap-4 lg:grid lg:grid-cols-1 lg:w-4/5 py-10 lg:pt-20 px-5 lg:px-10 bg-slate-900">
+    <div class="relative h-auto sm:grid sm:grid-cols-2 sm:gap-4 md:gap-4 lg:grid lg:grid-cols-1 lg:w-4/5 py-10 lg:pt-20 px-5 lg:px-10 bg-slate-900">
       {{-- SALES --}}
       <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
         <div class="h-40 lg:h-52 lg:w-4/12">

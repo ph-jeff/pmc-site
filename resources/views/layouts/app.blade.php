@@ -165,22 +165,43 @@
                 <h1 class="text-2xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Get Notified</h1>
                 <p class="text-base md:text-lg text-center mt-2">Lorem ipsum dolor sit amet, consectetur</p>
                 <div class="flex justify-center gap-2 mt-3">
-                    <div class="h-8 md:h-11 w-40 md:w-60"><input type="email" name="" id="" placeholder="Enter your email" class="h-full w-full pl-2"></div>
-                    <div class="h-8 md:h-11 w-20 md:w-28"><button type="submit" class="h-full w-full font-bebas bg-black text-white text-xl md:text-2xl hover:bg-danger">SUBSCRIBE</button></div>
+                    <div class="h-8 md:h-11 w-40 md:w-60">
+                        <input type="email" id="email" placeholder="Enter your email" class="h-full w-full pl-2">
+                    </div>
+                    <div class="h-8 md:h-11 w-20 md:w-28">
+                        <button type="submit" id="submit" onclick="myFunction()" class="h-full w-full font-bebas bg-black text-white text-xl md:text-2xl hover:bg-danger">SUBSCRIBE</button>
+                        <script>
+                            function myFunction(){
+                                var email = document.getElementById("email").value;
+                                if(email == ""){
+                                    Swal.fire(
+                                        'Please enter something'
+                                    )
+                                }else{
+                                        Swal.fire({
+                                        position: 'center-center',
+                                        icon: 'success',
+                                        title: 'Subscribed!',
+                                    })
+                                    var email = document.getElementById("email").value="";
+                                }
+                            }
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="h-24 md:h-32 w-full flex justify-center bg-cover bg-norepeat" style="background-image: url(img/footer-bottom.png)">
-            <div class="w-11/12 md:w-9/12 ">
-                <div class="h-2/4 border-b flex justify-center items-end pb-2 md:pb-3">
+            <div class="w-11/12 md:w-9/12 opacity-75">
+                <div class="h-2/4 border-b border-opacity-50 flex justify-center items-end pb-2 md:pb-3">
                     <ul class="flex gap-10 text-white ">
-                        <li><a href="/" class="text-xs md:text-sm">Home</a></li>
-                        <li><a href="" class="text-xs md:text-sm">Terms and Condition</a></li>
-                        <li><a href="" class="text-xs md:text-sm">Privacy</a></li>
+                        <li><a href="/" class="text-xs">Home</a></li>
+                        <li><a href="" class="text-xs">Terms and Condition</a></li>
+                        <li><a href="" class="text-xs">Privacy</a></li>
                     </ul>
                 </div >
                 <div class="h-2/4 pt-2 md:pt-3 text-white">
-                    <p class="text-center text-xs md:text-sm">Copyright @ 2023. Philippian Marketing Corporation. All Rights Reserved.</p>
+                    <p class="text-center text-xs">Copyright @ 2023. Philippian Marketing Corporation. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
