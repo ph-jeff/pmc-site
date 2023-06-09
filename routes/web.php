@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+Route::get('/home', function () {
+    return view('homepage1');
+});
 Route::get('/about', function () {
     return view('about');
 });
@@ -51,5 +54,6 @@ Route::get('/contact', function () {
 Route::get('/sample', function () {
     return view('sample');
 });
+
 
 

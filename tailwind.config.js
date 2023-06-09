@@ -9,6 +9,10 @@ theme: {
     boxShadow: {
       '3xl': '0px 4px 20px rgba(187, 23, 23, .3,);',
     },
+    padding: {
+      'custom-left': '50px', // Customize the left padding value here
+      'custom-right': '50px', // Customize the right padding value here
+    },
     fontSize: {
       small: '0.80rem' ,
       normal: '0.975rem',
