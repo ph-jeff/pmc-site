@@ -30,58 +30,68 @@
 </head>
 <body>
     <!-- Top Navigation Bar -->
-    <div class="h-6 md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-danger">
-        <div class=" flex w-[35%] md:w-[25%] ">
-            <ul class="flex items-center gap-x-1 md:gap-x-3">
-                <li class="font-semibold text-[.7rem] text-white" >Stay connected</li>
-                <li ><a href=""><img class="h-4" src="img/icons/facebook.png" alt="icons"></a></li>
-                <li><a href=""><img class="h-4" src="img/icons/youtube.png" alt="icons"></a></li>
-            </ul>
-        </div>
-        <div class="flex w-[60%] md:w-[40%] justify-start md:justify-end">
-            <ul class="flex items-center gap-x-1 md:gap-x-3">
-                <li><a href=""><img class="h-4" src="img/icons/email.png" alt="icons"></a></li>
-                <li class="font-semibold text-[.7rem] text-white mr-2 md:mr-5">hrad@philippians.ph</li>
-                <li><a href=""><img class="h-4" src="img/icons/mobile.png" alt="icons"></a></li>
-                <li class="font-semibold text-[.7rem] text-white">0936 153 2369</li>
-            </ul>
+    <div class="h-full bg-danger">
+        <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
+            <div class="sm:w-11/12 md:w-11/12 lg:w-9/12 flex justify-between gap-4 md:gap-0 lg:gap-0">
+                <ul class="flex items-center gap-x-2 md:gap-x-3">
+                    <li class="font-semibold text-[.7rem] text-white hidden sm:block md:block" >Stay connected</li>
+                    <li ><a href=""><img class="h-3" src="img/icons/facebook.png" alt="icons"></a></li>
+                    <li><a href=""><img class="h-3" src="img/icons/youtube.png" alt="icons"></a></li>
+                </ul>
+                <ul class="flex items-center gap-x-2 md:gap-0 lg:gap-0">
+                    <div class="flex items-center gap-2">
+                        <li><a href=""><img class="h-3" src="img/icons/email.png" alt="icons"></a></li>
+                        <li class="font-semibold text-[.7rem] text-white mr-2 md:mr-5">hrad@philippians.ph</li>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <li><a href=""><img class="h-3" src="img/icons/mobile.png" alt="icons"></a></li>
+                        <li class="font-semibold text-[.7rem] text-white">0936 153 2369</li>
+                    </div>
+                    </ul>
+            </div>
         </div>
     </div>
     {{-- Sticky Navbar (Mobile View) --}}
-    <nav class="relative md:hidden min-h-[10vh] sticky top-0 flex justify-between items-center px-2  bg-black z-50" x-data="{hamburger: false}" >
-        <div class="h-full md:w-[20%] flex items-center" x-cloak x-show="!hamburger">
-            <a class="" href="">
-                <img class="" src="img/pmc_logo.png" alt="logo" >
-            </a>
-        </div>
-        <div class="absolute top-0 left-0 bg-black z-50 h-50vh block w-full md:hidden" x-cloak x-show="hamburger" >
-            <div class="h-[10vh] flex justify-between items-center " >
-                <div class="h-full md:w-[20%] flex items-center pl-2" x-cloak >
+    <nav class="relative md:hidden w-full h-full sticky top-0 flex justify-between items-center bg-black z-50" x-data="{hamburger: false}" >
+        <div class="flex w-full h-20 justify-center items-center">
+            <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between items-center">
+                <div  x-cloak x-show="!hamburger">
                     <a class="" href="">
                         <img class="" src="img/pmc_logo.png" alt="logo" >
                     </a>
                 </div>
-                <button class="h-full float-right md:hidden pr-3 " @click="hamburger = false">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
+                <div class="absolute top-0 left-0 bg-black z-50 h-50vh block w-full md:hidden" x-cloak x-show="hamburger" >
+                    <div class="flex justify-center" >
+                        <div class="flex justify-between items-center h-20 w-11/12 md:w-11/12 lg:w-9/12">
+                            <div class="" x-cloak >
+                                <a class="" href="">
+                                    <img class="" src="img/pmc_logo.png" alt="logo" >
+                                </a>
+                            </div>
+                            <button class="h-full float-right md:hidden" @click="hamburger = false">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="h-[80%] text-center">        
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
+                        <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+                    </ul>
+                </div>
+                <button class="float-right md:hidden " @click="hamburger = !hamburger " x-show="!hamburger" >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="white" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </button>
             </div>
-            <ul class="h-[80%] text-center">        
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                <li class="p-3 px-5 hover:bg-[#860909]"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
-            </ul>
         </div>
-        <button class="float-right md:hidden pr-1 " @click="hamburger = !hamburger " x-show="!hamburger" >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="white" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
     </nav>
     {{-- Sticky messenger icon --}}
     {{-- <div class="w-[99%] md:min-h-[55px] h-[5vh] flex justify-end bottom-2 z-50 fixed bottom-0 rounded-full">

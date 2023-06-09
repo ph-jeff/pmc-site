@@ -31,6 +31,9 @@ Route::get('/news', function () {
 Route::get('/news2', function () {
     return view('news-pagination/news2');
 });
+Route::get('/news3', function () {
+    return view('news-pagination/news3');
+});
 Route::get('/career', function () {
     return view('career');
 });
