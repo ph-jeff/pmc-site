@@ -45,14 +45,14 @@
 
     <!-- Row 1 -->
     <div class="h-auto md:h-auto flex justify-around md:justify-between  items-center flex-col md:flex-row" >
-        <div class="h-72 md:h-96 mt-5 md:mt-0 w-full  rounded-2xl shadow-lg shadow-gray-200" >
+        <div class="h-auto md:h-auto mt-5 md:mt-0 w-full  rounded-2xl shadow-lg shadow-gray-200" >
             <!-- IMAGE HERE -->
             <div class=" h-32 md:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
-                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full " src="img/news/news_image_1.jpg" alt="" srcset="">
+                <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full object-cover " src="img/news/news1.png" alt="" srcset="">
             </div>
             <p class="text-base md:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
-            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mt-2 text-base">
+            <p class="text-justify ml-2 mr-2 mt-2 text-sm md:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis unde. Deserunt quaerat odit quam laboriosam, dolor quasi quas provident, ipsam, assumenda quisquam laudantium consequuntur accusantium in rerum corporis vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque eaque quo explicabo. Ea iusto eos itaque officia quidem cum ullam ratione possimus eaque! Minima sint officia quisquam ad provident?</p>
+            <div class="w-full  flex justify-start md:justify-center ml-2 md:ml-0 mb-2 mt-2 text-base">
                 <button class="border text-white bg-black h-10 w-32 rounded hover:bg-[#860909]">Read More</button>
             </div>
             
