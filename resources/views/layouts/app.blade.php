@@ -31,21 +31,25 @@
 </head>
 <body>
     <!-- Top Navigation Bar -->
-    <div class="h-8 md:min-h-[33px] md:h-[5vh] w-full flex justify-center md:justify-around items-center md:gap-x-2 bg-danger">
-        <div class=" flex w-[35%] md:w-[25%] ">
-            <ul class="flex items-center gap-x-1 md:gap-x-3">
-                <li class="font-semibold text-[.7rem] text-white" >Stay connected</li>
-                <li ><a href=""><img class="h-4" src="img/icons/facebook.png" alt="icons"></a></li>
-                <li><a href=""><img class="h-4" src="img/icons/youtube.png" alt="icons"></a></li>
-            </ul>
-        </div>
-        <div class="flex w-[60%] md:w-[40%] justify-start md:justify-end">
-            <ul class="flex items-center gap-x-1 md:gap-x-3">
-                <li><a href=""><img class="h-4" src="img/icons/email.png" alt="icons"></a></li>
-                <li class="font-semibold text-[.7rem] text-white mr-2 md:mr-5">hrad@philippians.ph</li>
-                <li><a href=""><img class="h-4" src="img/icons/mobile.png" alt="icons"></a></li>
-                <li class="font-semibold text-[.7rem] text-white">0936 153 2369</li>
-            </ul>
+    <div class="h-full bg-danger">
+        <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
+            <div class="sm:w-11/12 md:w-11/12 lg:w-9/12 flex justify-between gap-4 md:gap-0 lg:gap-0">
+                <ul class="flex items-center gap-x-2 md:gap-x-3">
+                    <li class="font-semibold text-[.7rem] text-white hidden sm:block md:block" >Stay connected</li>
+                    <li ><a href=""><img class="h-3" src="img/icons/facebook.png" alt="icons"></a></li>
+                    <li><a href=""><img class="h-3" src="img/icons/youtube.png" alt="icons"></a></li>
+                </ul>
+                <ul class="flex items-center gap-x-2 md:gap-0 lg:gap-0">
+                    <div class="flex items-center gap-2">
+                        <li><a href=""><img class="h-3" src="img/icons/email.png" alt="icons"></a></li>
+                        <li class="font-semibold text-[.7rem] text-white mr-2 md:mr-5">hrad@philippians.ph</li>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <li><a href=""><img class="h-3" src="img/icons/mobile.png" alt="icons"></a></li>
+                        <li class="font-semibold text-[.7rem] text-white">0936 153 2369</li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
     {{-- Sticky Navbar (Mobile View) --}}
@@ -162,7 +166,7 @@
     <footer >
         <div class="h-36 md:h-52  w-full flex justify-center bg-cover bg-norepeat " style="background-image: url(img/footer-top.png)">
             <div class="w-11/12 md:w-9/12 mt-3 md:mt-10 ">
-                <h1 class="text-2xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Get Notified</h1>
+                <h1 class="text-2xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-black from-30% via-red-900 via-70% to-red-900 to-90%">Get Notified</h1>
                 <p class="text-base md:text-lg text-center mt-2">Lorem ipsum dolor sit amet, consectetur</p>
                 <div class="flex justify-center gap-2 mt-3">
                     <div class="h-8 md:h-11 w-40 md:w-60">

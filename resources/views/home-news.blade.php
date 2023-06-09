@@ -24,7 +24,7 @@
 </nav>
 <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg'); ">
     <div class="bg-white bg-opacity-75 flex justify-center">
-        <div class="w-11/12 lg:w-4/5 bg-opacity-25">
+        <div class="w-11/12 lg:w-4/5">
             <div class="lg:flex mt-10 md:mt-10 lg:mt-20 gap-10">
                 <div class="w-full lg:w-1/2 h-48 sm:h-60 lg:h-96">
                     <img src="img/news/news4.png" class="h-full w-full object-cover rounded-t-lg" alt=" picture ">
