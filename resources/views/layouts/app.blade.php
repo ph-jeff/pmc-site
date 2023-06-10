@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
     {{-- css --}}
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/partnership.css">
@@ -57,7 +57,7 @@
             <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between items-center">
                 <div  x-cloak x-show="!hamburger">
                     <a class="" href="">
-                        <img class="" src="img/logo.png" alt="logo" >
+                        <img class="" src="img/pmc_logo.png" alt="logo" >
                     </a>
                 </div>
                 <div class="absolute top-0 left-0 bg-black z-50 h-50vh block w-full md:hidden" x-cloak x-show="hamburger" >

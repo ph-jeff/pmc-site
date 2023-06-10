@@ -6,6 +6,9 @@ module.exports = {
     ],
 theme: {
   extend: {
+    grayscale: {
+      0: '0',
+    },
     boxShadow: {
       '3xl': '0px 4px 20px rgba(187, 23, 23, .3,);',
     },
@@ -41,7 +44,12 @@ theme: {
   },
   border: {
     'danger-darker': '#8a0000',
-  }
+  },
 },
+
 plugins: [],
+
+grayscale: {
+  0: '0',
+},
 }
