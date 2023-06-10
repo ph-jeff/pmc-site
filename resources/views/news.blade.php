@@ -4,6 +4,7 @@
 @endsection('title')
 @section('main')
 <!-- Sticky Navigation Bar (Website View - news page) -->
+
 <nav class="hidden md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
     <div class="flex w-full h-20 justify-center items-center">
         <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between content-center">
@@ -23,6 +24,7 @@
         </div>
     </div>
 </nav>
+
 <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
     <div class="bg-white bg-opacity-75 flex justify-center" >
         <div class=" w-11/12 md:w-11/12 lg:w-9/12" >

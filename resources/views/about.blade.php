@@ -31,75 +31,9 @@
 </div>
 <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
     <div class="relative flex flex-col items-center pt-[25px] md:pt-[63px] bg-white/[75%]" >
-        <div class="flex flex-col items-center w-[90%] md:w-8/12 ">
-            <p class="text-3xl md:text-5xl md:tracking-wider font-bebas text-transparent bg-clip-text bg-gradient-to-r from-[#472C2C] to-[#C10000]">About us</p>
-            <p class="line-clamp-3 md:line-clamp-0 text-[13px] md:text-[15px] font-medium text-center leading-tight md:leading-loose font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam </p>
-        </div>
-        <div class="relative w-[90%] md:w-[83%] pb-[35%] md:pb-[25%] mt-[20px]" >
-            <img src="img/about/about_us.png" class=" absolute h-full w-full object-cover" alt="picture">
-            <div class="absolute -bottom-14 md:-bottom-24 flex justify-center">
-                <div class="bg-white drop-shadow-lg shadow-gray-300 h-[auto] md:h-[195px] w-[95%] md:w-[85%] ">
-                    <p class="font-montserrat font-bold text-xs sm:text-sm md:text-[17px] ml-3 md:ml-5 mt-1 md:mt-4">Welcome to Our Site</p>
-                    <p class=" font-montserrat font-medium text-[.6rem] sm:text-xs text-justify md:text-[15px] ml-3 mr-3 md:ml-5 mb-1 md:mt-1 md:leading-loose ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus. 
-                    </p>
-                    <p class="hidden lg:block lg:font-montserrat lg:font-medium lg:text-[15px] lg:ml-5 lg:mt-5 lg:leading-loose">    
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="h-[auto] md:h-[440px] w-[90%] md:w-[83%] mt-[75px] md:mt-[160px] md:flex" x-data="{about: false}">
-            <div class=" h-[auto] md:h-[380px] w-full md:w-[35%] flex justify-center md:justify-end items-start ">
-                <div class="h-full w-[150px] md:w-full bg-[#D60000] rounded-[20px] p-3">
-                    <img class="h-full w-full" src="img/about/award.jpg" alt="award">
-                </div>
-            </div>
-            <div class=" h-[auto] w-full md:w-[65%]">
-                <div class="h-full w-full">
-                    <p class="text-[14px] md:text-[19px] font-montserrat font-semibold text-[#860909] mt-[10px] md:mt-[10px] text-center md:text-start md:ml-[45px] leading-tight md:leading-none">BEST START-UP RISING E-COMMERCE COMPANY FOR 2022.</p>
-                    <p class="text-[13px] md:text-[15px] text-center md:text-justify font-montserrat font-normal md:leading-7 md:ml-[45px] md:mt-[10px] line-clamp-5 md:line-clamp-0" >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.
-                    </p>
-                    <p class="text-[13px] md:text-[15px] text-center md:text-justify font-montserrat font-normal md:leading-7 md:ml-[45px] md:mt-[10px] line-clamp-5 md:line-clamp-none" x-show="about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
-                    </p>
-                    <div class="w-full flex justify-center md:justify-start">
-                        <button class="bg-black text-white h-9 md:h-10 w-24 md:w-28 font-montserrat text-center text-[.8rem] md:text-[14px] font-medium md:ml-[45px] mt-[10px] md:mt-[15px] hover:bg-[#860909]" @click="about = !about">Read more</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- MISSION,VISION & VALUES --}}
-        <div class="h-[auto] md:h-[530px] w-[90%] md:w-[83%] flex flex-col items-center">
-            <div class="h-auto mt-5 md:mt-0">
-                <p class="font-bebas text-2xl md:text-5xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#472C2C] to-[#C10000] text-center">COMPANY MISSION VISION AND CORE VALUES</p>
-            </div>
-            <p class="text-sm text-center md:text-base font-montserrat font-medium md:mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  </p>
-            <div class="w-full h-full mt-2 md:mt-6 md:flex md:justify-between">
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/vision.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR VISION</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col  text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/mission.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR MISSION</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col  text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/values.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR CORE VALUES</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         {{-- milestone (website view) --}}
-        <div class="hidden md:block md:relative md:h-[145vh] md:w-full md:mt-[50px] md:flex md:flex-col md:bg-[#302121] md:items-center md:bg-cover md:bg-repeat-norepeat" style="">
+        <div class="hidden md:block md:relative md:h-auto md:w-full md:mt-[50px] md:flex md:flex-col md:bg-[#302121] md:items-center md:bg-cover md:bg-repeat-norepeat" style="border: 1px solid red">
             {{-- coverphoto --}}
             <div class="absolute top-0 h-full w-full">
                 <img src="img/about/milestone.png" class="h-full w-full opacity-[25%]"  alt="">
@@ -112,7 +46,7 @@
                     <p class="text-center font-montserrat text-lg text-white">Nullam leo sem, volutpat vel nibh ac, pretium fringilla odio. Etiam rhoncus ligula at quam accumsan aliquam. Nunc posuere ex vitae lectus ornare consequat. </p>
                 </div>
             </div>
-            <div class=" h-[80%] w-full flex justify-center">
+            <div class=" h-auto w-full flex justify-center" style="border: 1px solid blue">
                 <div class="h-full w-[83%] relative flex flex-col items-center">
                     <!-- VERTICAL LINE -->
                     <div class="vertical_line absolute h-[74.5%] w-1 rounded-full bg-white top-[8%] z-20">
@@ -261,6 +195,8 @@
                 </div>
             </div>
         </div>  
+
+        
         <div class="relative md:hidden h-[auto] w-full mt-[50px] flex flex-col bg-[#302121] items-center bg-cover  bg-repeat-norepeat" style="">
             {{-- coverphoto --}}
             <div class="absolute top-0 h-full w-full">
@@ -422,6 +358,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>   

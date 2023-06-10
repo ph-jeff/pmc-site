@@ -27,6 +27,7 @@
     {{-- tailwind --}}
     {{-- @vite('resources/css/app.css') --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
 </head>
 <body>
     <!-- Top Navigation Bar -->
@@ -168,6 +169,7 @@
             </div>
         </div>
     </footer>
+    @livewireScripts
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
