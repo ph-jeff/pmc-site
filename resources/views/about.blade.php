@@ -94,13 +94,85 @@
                             <p class="font-montserrat text-sm text-justify text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="w-full flex justify-center mb-5 lg:mb-0">
+                    <div class="w-full flex justify-center mb-5 lg:mb-10">
                         <div class="h-96 w-9/12 md:w-full bg-gray-600 bg-cover bg-repeat-norepeat" style="background-image: url('img/about/values.png')">
                             <p class="font-bebas text-4xl text-white ml-3 mt-48">OUR CORE VALUES</p>
                             <p class="font-montserrat text-sm text-justify text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Milestone --}}
+    <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/about/milestone.png'); ">
+        <div class=" backdrop-filter backdrop-brightness-50 flex justify-center">
+            <div class="w-11/12 md:w-11/12 lg:w-9/12 ">
+                <h1 class="font-bebas text-2xl md:text-5xl text-white tracking-wider text-center pt-5 md:pt-14">OUR COMPANY MILESTONE</h1>
+                <p class="text-white font-montserrat text-center">Nullam leo sem, volutpat vel nibh ac, pretium fringilla odio. Etiam rhoncus ligula at quam accumsan aliquam. Nunc posuere ex vitae lectus ornare consequat.</p>
+                <div class="flex h-screen py-10">
+                    <div class="h-full w-full">
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full w-2 flex justify-center items-center">
+                        <div class="relative h-5/6 w-1 rounded-full bg-white">
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white"></div>
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 19%"></div>
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 39%"></div>
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 59%"></div>
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 79%"></div>
+                                <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 99%"></div>
+                        </div>
+                    </div>
+                    <div class="h-full w-full">
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex right-0 w-11/12 z-20">
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex right-0 w-11/12 z-20">
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 w-4/5 flex right-0 w-11/12 z-20">
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg" style="background-color:rgb(255, 255, 255, .6)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

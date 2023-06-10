@@ -155,9 +155,9 @@
             {{-- END APPLICATION FORM --}}
             <div class="flex justify-center gap-5 text-center mt-10 md:mt-10">
                 <a href="/career" class="px-4 py-2 border border-black text-black w-40 h-42 hover:bg-red-900  hover:border-red-900 hover:text-white">Back</a>
-                <s type="submit" class="px-4 py-2  w-40 h-42 bg-black hover:bg-red-900 text-white ">
+                <a type="submit" class="px-4 py-2  w-40 h-42 bg-black hover:bg-red-900 text-white ">
                     Submit  
-                </s>
+                </a>
             </div>
         </form>
     </div>
