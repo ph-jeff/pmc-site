@@ -29,7 +29,7 @@
               </div>
             {{-- Sort --}}
             <div class="h-[10vh] flex items-center mb-2 justify-between">
-                <div class="h-2 flex items-center gap-x-1 ml-2 md:ml-0">
+                <div class="h-2 flex items-center gap-x 1 ml-2 md:ml-0">
                     <span >Show</span>
                     <select class="border border-gray-300 w-full h-10 rounded px-2 py-1">
                         <option value="">0</option>
