@@ -29,7 +29,7 @@
 
     </div>
 </div>
-<div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
+<div class="relative background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
     <div class="relative flex flex-col items-center pt-[25px] md:pt-[63px] bg-white/[75%]" >
         <div class="flex flex-col items-center w-[90%] md:w-8/12 ">
             <p class="text-3xl md:text-5xl md:tracking-wider font-bebas text-transparent bg-clip-text bg-gradient-to-r from-[#472C2C] to-[#C10000]">About us</p>

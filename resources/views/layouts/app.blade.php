@@ -29,7 +29,7 @@
     {{-- @vite('resources/css/app.css') --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="relative" x-data="{seemore1: false}">
     <!-- Top Navigation Bar -->
     <div class="h-full bg-danger">
         <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
@@ -53,7 +53,7 @@
         </div>
     </div>
     {{-- Sticky Navbar (Mobile View) --}}
-    <nav class="relative md:hidden min-h-[10vh] sticky top-0 flex justify-between items-center px-2  bg-black z-50" x-data="{hamburger: false}" >
+    <nav class="relative md:hidden min-h-[10vh] sticky top-0 flex justify-between items-center px-2  bg-black z-40" x-data="{hamburger: false}" >
         <div class="h-full md:w-[20%] flex items-center" x-cloak x-show="!hamburger">
             <a class="" href="">
                 <img class="" src="img/pmc_logo.png" alt="logo" >
@@ -211,5 +211,7 @@
         </div>
     </footer>
     <script src="{{ mix('js/app.js') }}"></script>
+    
+@include('layouts.milestone-modal')
 </body>
 </html>
