@@ -112,7 +112,7 @@
 
 
     <!-- Footer -->
-    <footer class="min-h-[150px] md:min-h-[350px] md:h-[60vh] bg-cover bg-norepeat" style="background-image: url(img/foot1.png)">
+    <footer class="min-h-[150px] md:min-h-[350px] md:h-[60vh] bottom-0 bg-cover bg-norepeat" style="background-image: url(img/foot1.png)">
         <div class="h-[75px] md:h-[60%] pt-2 md:pt-0 ">
             <div class="h-[55%] ">
                 <div class="h-[60%] flex justify-center items-end">

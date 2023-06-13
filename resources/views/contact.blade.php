@@ -34,9 +34,9 @@
     </main>
     <div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg'); ">
     <div class="bg-white bg-opacity-75 flex justify-center">
-        <div class=" w-11/12 md:w-11/12 lg:w-9/12">
+        <div class="relative md:-top-16 w-11/12 md:w-11/12 lg:w-9/12">
           {{-- Content --}}
-                        <div class="my-10 flex flex-col-reverse md:flex-row  md:px-8 md:pb-8 pt-5 gap-8 bg-white">
+                        <div class=" flex flex-col-reverse md:flex-row  md:px-8 md:pb-8 pt-5 gap-8 bg-white">
                                 <!-- Contacts -->
                             <div class="h-full md:h-auto w-full md:w-96 flex flex-col ">
                                 <div class="h-28 md:h-1/4 md:pb-3 mb-3 md:mb-0 bg-white">
