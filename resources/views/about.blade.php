@@ -25,7 +25,6 @@
     {{-- Image Slider --}}
     <div class="imgSliderAbout object-cover h-44 md:h-96"></div>
 
-
     <div class=" background-cover bg-cover bg-norepeat"  style="background-image: url('img/coverphoto.jpg'); ">
         <div class="bg-white bg-opacity-75 flex justify-center">
             <div class="w-11/12 md:w-11/12 lg:w-9/12">
@@ -50,6 +49,7 @@
                         </div>
                     </div>
                 </div>
+                {{-- award --}}
                 <div class="mt-28 sm:mt-20 md:mt-28 lg:mt-40 lg:flex gap-10" x-data="{about: false}">
                     <div class="lg:w-2/5 flex justify-center items-start ">
                         <div class="h-full w-48 md:w-72 lg:w-full bg-danger rounded-2xl p-3 md:p-5">
@@ -74,7 +74,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                {{-- Mission, Vision and Core Values --}}
+                <div>
                     <div class="md:h-auto flex justify-center">
                         <h1 class="font-bebas text-3xl md:text-5xl lg:text-5xl tracking-wider text-center text-transparent bg-clip-text bg-gradient-to-r from-red-900 via-red-800 to-red-500 md:tracking-wider mt-5 md:mt-14">
                             COMPANY MISSION VISION AND CORE VALUES
@@ -112,6 +113,7 @@
                 {{-- website view --}}
                 <div class=" hidden md:block md:flex md:h-screen md:py-10">
                     <div class="h-full w-full">
+                        {{-- milestone1 --}}
                         <div class="h-1/3 w-full">
                             <div class="relative h-2/4 w-full flex justify-center">
                                 <div class="absolute -top-3 flex left-0 w-11/12 z-20">
@@ -120,10 +122,13 @@
                                             <img src="img/about/milestone1.png" class="h-full w-full object-cover rounded-l-lg" alt="">
                                         </div>
                                         <div class="flex items-center" style="width: 50%">
-                                        <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                        </div>
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore1 = !seemore1 ">see more</button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
                                             <p class="font-semibold text-center">June 1 2023</p>
@@ -133,18 +138,23 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- milestone3 --}}
                         <div class="h-1/3 w-full">
                             <div class="relative h-2/4 w-full flex justify-center">
                                 <div class="absolute -top-3 flex left-0 w-11/12 z-20">
                                     <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
                                         <div class="p-2" style="width: 30%">
-                                            <img src="img/about/milestone.png" class="h-full w-full object-cover rounded-l-lg" alt="">
+                                            <img src="img/about/milestone3.png" class="h-full w-full object-cover rounded-l-lg" alt="">
                                         </div>
                                         <div class="flex items-center" style="width: 50%">
-                                        <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                        </div>
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore3 = !seemore3 ">see more</button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
                                             <p class="font-semibold text-center">DATE HERE</p>
@@ -154,28 +164,38 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- milestone5 --}}
                         <div class="h-1/3 w-full">
                             <div class="relative h-2/4 w-full flex justify-center">
                                 <div class="absolute -top-3 flex left-0 w-11/12 z-20">
                                     <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        {{-- image --}}
                                         <div class="p-2" style="width: 30%">
                                             <img src="img/about/milestone5.png" class="h-full w-full object-cover rounded-l-lg" alt="">
                                         </div>
+                                        {{-- caption --}}
                                         <div class="flex items-center" style="width: 50%">
-                                        <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore5 = !seemore5 ">see more</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div>
+                                        {{-- date --}}
                                         <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
                                             <p class="font-semibold text-center">DATE HERE</p>
                                         </div>
                                     </div>
+                                    {{-- triangle shape --}}
                                     <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{-- timeline LINE and CIRCLES --}}
                     <div class="h-full w-2 flex justify-center items-center">
                         <div class="relative h-5/6 w-1 rounded-full bg-white">
                             <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white"></div>
@@ -186,22 +206,32 @@
                             <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 99%"></div>
                         </div>
                     </div>
+                    
+
                     <div class="h-full w-full">
+                        {{-- millestone2 --}}
                         <div class="h-1/3 w-full flex items-end">
                             <div class="relative h-2/4 w-full flex justify-center">
                                 <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    
+                                    {{-- triangle shape --}}
                                     <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
                                     <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
                                         {{-- date --}}
                                         <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
                                             <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
                                         </div>
+                                        {{-- caption --}}
                                         <div class="flex items-center" style="width: 50%">
                                             <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore2 = !seemore2 ">see more</button>
+                                                </div>
                                             </div>
                                         </div>
+                                        {{-- image --}}
                                         <div class="p-2" style="width: 30%">
                                             <img src="img/about/milestone2.png" class="h-full w-full object-cover rounded-r-lg" alt="">
                                         </div>
@@ -209,21 +239,29 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- millestone4 --}}
                         <div class="h-1/3 w-full flex items-end">
                             <div class="relative h-2/4 w-full w-full flex justify-center">
                                 <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    {{-- triangle shape --}}
                                     <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
                                     <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
                                         {{-- date --}}
                                         <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
                                             <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
                                         </div>
+                                        {{-- caption --}}
                                         <div class="flex items-center" style="width: 50%">
                                             <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore4 = !seemore4 ">see more</button>
+                                                </div>
                                             </div>
                                         </div>
+                                        {{-- image --}}
                                         <div class="p-2" style="width: 30%">
                                             <img src="img/about/milestone4.png" class="h-full w-full object-cover rounded-r-lg" alt="">
                                         </div>
@@ -231,21 +269,29 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- millestone6 --}}
                         <div class="h-1/3 w-full flex items-end">
                             <div class="relative h-2/4 w-full w-full flex justify-center">
                                 <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    {{-- triangle shape --}}
                                     <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
                                     <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
                                         {{-- date --}}
                                         <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
                                             <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
                                         </div>
+                                        {{-- caption --}}
                                         <div class="flex items-center" style="width: 50%">
                                             <div >
-                                                <h1 class="font-bebas text-2xl tracking-wider">CAPTION HERE</h1>
-                                                <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore6 = !seemore6 ">see more</button>
+                                                </div>
                                             </div>
                                         </div>
+                                        {{-- image --}}
                                         <div class="p-2" style="width: 30%">
                                             <img src="img/about/milestone6.png" class="h-full w-full object-cover rounded-r-lg" alt="">
                                         </div>
@@ -255,8 +301,10 @@
                         </div>
                     </div>
                 </div>
-                {{-- mobile view --}}
+
+                {{-- Mobile View --}}
                 <div class="md:hidden flex w-full h-auto py-10 gap-5 sm:gap-10 ">
+                    {{-- timeline LINE and CIRCLES --}}
                     <div class="w-2 flex justify-center items-center">
                         <div class="relative h-5/6 w-1 rounded-full bg-white" style="height: 86%">
                             <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white "></div>
@@ -267,104 +315,18 @@
                             <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 99%"></div>
                         </div>
                     </div>
+
                     <div class="w-full">
+                        {{-- millestone1 --}}
                         <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
                             <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
                             <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
                                 {{-- date --}}
                                 <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
                                     <p class="text-base md:text-xl font-bold text-center">June 1 2021</p>
                                 </div>
-                                <div class="flex items-center" style="width: 50%">
-                                    <div >
-                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
-                                        <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                    </div>
-                                </div>
-                                <div class="p-2" style="width: 30%">
-                                    <img src="img/about/milestone1.png" class="h-full w-full object-cover rounded-r-lg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-auto w-full flex mb-5" >
-                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
-                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
-                                {{-- date --}}
-                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
-                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
-                                </div>
-                                <div class="flex items-center" style="width: 50%">
-                                    <div >
-                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
-                                        <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                    </div>
-                                </div>
-                                <div class="p-2" style="width: 30%">
-                                    <img src="img/about/milestone2.png" class="h-full w-full object-cover rounded-r-lg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-auto w-full flex mb-5" >
-                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
-                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
-                                {{-- date --}}
-                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
-                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
-                                </div>
-                                <div class="flex items-center" style="width: 50%">
-                                    <div >
-                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
-                                        <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                    </div>
-                                </div>
-                                <div class="p-2" style="width: 30%">
-                                    <img src="img/about/milestone3.png" class="h-full w-full object-cover rounded-r-lg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-auto w-full flex mb-5" >
-                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
-                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
-                                {{-- date --}}
-                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
-                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
-                                </div>
-                                <div class="flex items-center" style="width: 50%">
-                                    <div >
-                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
-                                        <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                    </div>
-                                </div>
-                                <div class="p-2" style="width: 30%">
-                                    <img src="img/about/milestone4.png" class="h-full w-full object-cover rounded-r-lg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-auto w-full flex mb-5" >
-                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
-                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
-                                {{-- date --}}
-                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
-                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
-                                </div>
-                                <div class="flex items-center" style="width: 50%">
-                                    <div >
-                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
-                                        <p class=" text-justify text-xs sm:text:sm " style="text-indent: 1.5rem">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                    </div>
-                                </div>
-                                <div class="p-2" style="width: 30%">
-                                    <img src="img/about/milestone5.png" class="h-full w-full object-cover rounded-r-lg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-auto w-full flex" >
-                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
-                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
-                                {{-- date --}}
-                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
-                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
-                                </div>
+                                {{-- caption --}}
                                 <div class="flex items-center" style="width: 50%">
                                     <div >
                                         <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
@@ -374,6 +336,137 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone1.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone2 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore2 = !seemore2 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone2.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone3 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore3 = !seemore3 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone3.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone4 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore4 = !seemore4 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone4.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone5 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore5 = !seemore5 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone5.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone6 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- Caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore6 = !seemore6 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
                                 <div class="p-2" style="width: 30%">
                                     <img src="img/about/milestone6.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
                                 </div>

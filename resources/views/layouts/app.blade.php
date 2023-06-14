@@ -29,7 +29,14 @@
     {{-- @vite('resources/css/app.css') --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="relative" x-data="{seemore1: false}">
+<body class="relative" x-data="{
+    seemore1: false,
+    seemore2: false,
+    seemore3: false,
+    seemore4: false,
+    seemore5: false,
+    seemore6: false,
+}">
     <!-- Top Navigation Bar -->
     <div class="h-full bg-danger">
         <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
