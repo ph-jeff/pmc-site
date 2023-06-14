@@ -4,428 +4,479 @@
 @endsection('title')
 
 @section('main')
-<!-- Sticky Navigation Bar (Website View - homepage) -->
-<nav class="hidden md:min-h-[91px] md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
-    <div class="h-full w-[20%] flex items-center">
-        <a href="">
-            <img class="" src="img/pmc_logo.png" alt="logo" >
-        </a>
-    </div>
-    <div class="w-[50%] flex items-center justify-end">
-        <ul class="flex">        
-            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold " href="/"> Home </a></li>
-            <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
-        </ul>
-    </div>
-</nav>
-{{-- <div class=" h-[57vh] md:h-[57vh] imgSliderAbout bg-slate-300">
-</div> --}}
-<div class="relative pb-[30%] md:pb-[27%]">
-    <div class="absolute h-full w-full object-cover imgSliderAbout">
+    <!-- Sticky Navigation Bar (Website View - career page) -->
+    <nav class="hidden md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
+        <div class="flex w-full h-20 justify-center items-center">
+            <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between content-center">
+                <div>
+                    <a href="/">
+                        <img class="" src="img/pmclogo.png" alt="logo" >
+                    </a>
+                </div>
+                <ul class="flex gap-1 text-center items-center">
+                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{-- Image Slider --}}
+    <div class="imgSliderAbout object-cover h-44 md:h-96"></div>
 
-    </div>
-</div>
-<div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
-    <div class="relative flex flex-col items-center pt-[25px] md:pt-[63px] bg-white/[75%]" >
-        <div class="flex flex-col items-center w-[90%] md:w-8/12 ">
-            <p class="text-3xl md:text-5xl md:tracking-wider font-bebas text-transparent bg-clip-text bg-gradient-to-r from-[#472C2C] to-[#C10000]">About us</p>
-            <p class="line-clamp-3 md:line-clamp-0 text-[13px] md:text-[15px] font-medium text-center leading-tight md:leading-loose font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam </p>
+    <div class=" background-cover bg-cover bg-norepeat"  style="background-image: url('img/coverphoto.jpg'); ">
+        <div class="bg-white bg-opacity-75 flex justify-center">
+            <div class="w-11/12 md:w-11/12 lg:w-9/12">
+                {{-- About Content --}}
+                <div class="flex justify-center">
+                    <div class="lg:w-11/12">
+                        <div class="md:h-auto flex justify-center">
+                            <h1 class="font-bebas text-3xl md:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-900 via-red-800 to-red-500 md:tracking-wider mt-5 md:mt-14">
+                                ABOUT US
+                            </h1>
+                        </div>
+                        <p class="font-montserrat text-base md:text-base lg:text-lg font-normal text-center md:mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam </p>
+                    </div>
+                </div>
+                <div class="relative h-44 md:h-80 w-full mt-5 ">
+                    <img src="img/about/about_us.png" alt="" class="h-full w-full object-cover">
+                    <div class="absolute -bottom-1/2 sm:-bottom-1/4 md:-bottom-1/4 lg:-bottom-1/3 h-auto flex justify-center">
+                        <div class="w-11/12 md:w-10/12 bg-white filter drop-shadow-md shadow-gray-500 p-2 md:p-5">
+                            <h2 class="font-montserrat font-semibold text-lg sm:text-sm md:text-lg md:mb-2">Welcome to Our Site</h2>
+                            <p class="font-montserrat text-sm sm:text-xs md:text-base font-normal text-justify md:mb-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus.</p>
+                            <p class="hidden lg:block font-montserrat sm:text-xs md:text-base font-normal text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus.</</p>
+                        </div>
+                    </div>
+                </div>
+                {{-- award --}}
+                <div class="mt-28 sm:mt-20 md:mt-28 lg:mt-40 lg:flex gap-10" x-data="{about: false}">
+                    <div class="lg:w-2/5 flex justify-center items-start ">
+                        <div class="h-full w-48 md:w-72 lg:w-full bg-danger rounded-2xl p-3 md:p-5">
+                            <img class="h-full w-full" src="img/about/award.jpg" alt="award">
+                        </div>
+                    </div>
+                    <div class=" h-auto w-full md:w-full lg:w-3/5">
+                        <div class="h-full w-full">
+                            <p class="text-center lg:text-left lg:justify-start text-base md:text-lg font-montserrat font-semibold text-red-900 mt-3 leading-tight md:leading-none">BEST START-UP RISING E-COMMERCE COMPANY FOR 2022.</p>
+                            <p class="text-sm md:text-base font-normal text-center md:text-justify font-montserrat font-normal md:leading-7 my-2" >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.
+                            </p>
+                            <p class="hidden lg:block text-sm md:text-base font-normal text-center md:text-justify font-montserrat font-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <p class="text-sm md:text-base font-normal text-center md:text-justify font-montserrat font-normale" x-show="about">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <div class="block lg:hidden w-full flex justify-center lg:justify-start mt-2">
+                                <button class="bg-black text-white h-9 md:h-10 w-24 md:w-28 font-montserrat text-center text-sm font-medium hover:bg-danger" @click="about = !about">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- Mission, Vision and Core Values --}}
+                <div>
+                    <div class="md:h-auto flex justify-center">
+                        <h1 class="font-bebas text-3xl md:text-5xl lg:text-5xl tracking-wider text-center text-transparent bg-clip-text bg-gradient-to-r from-red-900 via-red-800 to-red-500 md:tracking-wider mt-5 md:mt-14">
+                            COMPANY MISSION VISION AND CORE VALUES
+                        </h1>
+                    </div>
+                    <p class="text-base text-center  md:text-base lg:text-lg font-montserrat font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  </p>
+                    <div class="md:flex gap-10 mt-5">
+                        <div class="w-full flex justify-center mb-5 lg:mb-0">
+                            <div class="h-96 w-9/12 md:w-full bg-gray-400 bg-cover bg-repeat-norepeat" style="background-image: url('img/about/vision.png')">
+                                <p class="font-bebas text-4xl text-white ml-3 mt-48">OUR VISION</p>
+                                <p class="font-montserrat text-sm text-justify text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mb-5 lg:mb-0">
+                            <div class="h-96 w-9/12 md:w-full bg-gray-500 bg-cover bg-repeat-norepeat" style="background-image: url('img/about/mission.png')">
+                                <p class="font-bebas text-4xl text-white ml-3 mt-48">OUR MISSION</p>
+                                <p class="font-montserrat text-sm text-justify text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mb-5 lg:mb-10">
+                            <div class="h-96 w-9/12 md:w-full bg-gray-600 bg-cover bg-repeat-norepeat" style="background-image: url('img/about/values.png')">
+                                <p class="font-bebas text-4xl text-white ml-3 mt-48">OUR CORE VALUES</p>
+                                <p class="font-montserrat text-sm text-justify text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="relative w-[90%] md:w-[83%] pb-[35%] md:pb-[25%] mt-[20px]" >
-            <img src="img/about/about_us.png" class=" absolute h-full w-full object-cover" alt="picture">
-            <div class="absolute -bottom-14 md:-bottom-24 flex justify-center">
-                <div class="bg-white drop-shadow-lg shadow-gray-300 h-[auto] md:h-[195px] w-[95%] md:w-[85%] ">
-                    <p class="font-montserrat font-bold text-xs sm:text-sm md:text-[17px] ml-3 md:ml-5 mt-1 md:mt-4">Welcome to Our Site</p>
-                    <p class=" font-montserrat font-medium text-[.6rem] sm:text-xs text-justify md:text-[15px] ml-3 mr-3 md:ml-5 mb-1 md:mt-1 md:leading-loose ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus. 
-                    </p>
-                    <p class="hidden lg:block lg:font-montserrat lg:font-medium lg:text-[15px] lg:ml-5 lg:mt-5 lg:leading-loose">    
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus. Consequat semper viverra nam libero justo laoreet sit amet cursus. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="h-[auto] md:h-[440px] w-[90%] md:w-[83%] mt-[75px] md:mt-[160px] md:flex" x-data="{about: false}">
-            <div class=" h-[auto] md:h-[380px] w-full md:w-[35%] flex justify-center md:justify-end items-start ">
-                <div class="h-full w-[150px] md:w-full bg-[#D60000] rounded-[20px] p-3">
-                    <img class="h-full w-full" src="img/about/award.jpg" alt="award">
-                </div>
-            </div>
-            <div class=" h-[auto] w-full md:w-[65%]">
-                <div class="h-full w-full">
-                    <p class="text-[14px] md:text-[19px] font-montserrat font-semibold text-[#860909] mt-[10px] md:mt-[10px] text-center md:text-start md:ml-[45px] leading-tight md:leading-none">BEST START-UP RISING E-COMMERCE COMPANY FOR 2022.</p>
-                    <p class="text-[13px] md:text-[15px] text-center md:text-justify font-montserrat font-normal md:leading-7 md:ml-[45px] md:mt-[10px] line-clamp-5 md:line-clamp-0" >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum.
-                    </p>
-                    <p class="text-[13px] md:text-[15px] text-center md:text-justify font-montserrat font-normal md:leading-7 md:ml-[45px] md:mt-[10px] line-clamp-5 md:line-clamp-none" x-show="about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Tempus quam pellentesque nec nam aliquam. Viverra aliquet eget sit amet. Tempor orci eu lobortis elementum. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
-                    </p>
-                    <div class="w-full flex justify-center md:justify-start">
-                        <button class="bg-black text-white h-9 md:h-10 w-24 md:w-28 font-montserrat text-center text-[.8rem] md:text-[14px] font-medium md:ml-[45px] mt-[10px] md:mt-[15px] hover:bg-[#860909]" @click="about = !about">Read more</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- MISSION,VISION & VALUES --}}
-        <div class="h-[auto] md:h-[530px] w-[90%] md:w-[83%] flex flex-col items-center">
-            <div class="h-auto mt-5 md:mt-0">
-                <p class="font-bebas text-2xl md:text-5xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#472C2C] to-[#C10000] text-center">COMPANY MISSION VISION AND CORE VALUES</p>
-            </div>
-            <p class="text-sm text-center md:text-base font-montserrat font-medium md:mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  </p>
-            <div class="w-full h-full mt-2 md:mt-6 md:flex md:justify-between">
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/vision.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR VISION</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col  text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/mission.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR MISSION</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-[340px] flex justify-center mb-3 md:mb-0">
-                    <div class="w-[80%] md:w-[340px] h-full bg-gray-700 flex flex-col  text-justify bg-cover bg-repeat-norepeat" style="background-image: url('img/about/values.png')">
-                        <p class="font-bebas text-4xl text-white ml-3 mt-[58%]">OUR CORE VALUES</p>
-                        <p class="font-montserrat text-[0.9rem] text-white ml-3 mr-3 mb-4 md:mb-0 leading-light md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- milestone (website view) --}}
-        <div class="hidden md:block md:relative md:h-[145vh] md:w-full md:mt-[50px] md:flex md:flex-col md:bg-[#302121] md:items-center md:bg-cover md:bg-repeat-norepeat" style="">
-            {{-- coverphoto --}}
-            <div class="absolute top-0 h-full w-full">
-                <img src="img/about/milestone.png" class="h-full w-full opacity-[25%]"  alt="">
-            </div>
-            <div class="abolute z-10 h-[20%] flex flex-col items-center w-[70%]">
-                <div class="h-[60%] flex justify-center items-center">
-                    <p class="font-bebas text-5xl tracking-wider text-white">Our company milestone</p>
-                </div>
-                <div class="h-[40%] flex items-start">
-                    <p class="text-center font-montserrat text-lg text-white">Nullam leo sem, volutpat vel nibh ac, pretium fringilla odio. Etiam rhoncus ligula at quam accumsan aliquam. Nunc posuere ex vitae lectus ornare consequat. </p>
-                </div>
-            </div>
-            <div class=" h-[80%] w-full flex justify-center">
-                <div class="h-full w-[83%] relative flex flex-col items-center">
-                    <!-- VERTICAL LINE -->
-                    <div class="vertical_line absolute h-[74.5%] w-1 rounded-full bg-white top-[8%] z-20">
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white"></div>
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[19.5%]"></div>
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[40%]"></div>
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[60%]"></div>
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[80%]"></div>
-                        <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[100%]"></div>
-                    </div>
-    
-                    <div class="relative h-full w-full">
-                        <div class="absolute h-[134px] w-full flex justify-start">
-                            <div class="relative h-full w-[45%] flex z-10 ">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[10px] mt-[6px] z-10">
-                                        <!--insert image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                </div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
+        {{-- Milestone --}}
+        <div class="background-cover bg-cover bg-norepeat flex justify-center" style="background-image: url('img/about/milestone-cover.png'); ">
+            <div class="w-11/12 md:w-11/12 lg:w-9/12 ">
+                <h1 class="font-bebas text-3xl md:text-5xl text-white tracking-wider text-center pt-5 md:pt-14">OUR COMPANY MILESTONE</h1>
+                <p class="text-white text-lg md:text-xl font-montserrat text-center">Nullam leo sem, volutpat vel nibh ac, pretium fringilla odio. Etiam rhoncus ligula at quam accumsan aliquam. Nunc posuere ex vitae lectus ornare consequat.</p>
+                {{-- website view --}}
+                <div class=" hidden md:block md:flex md:h-screen md:py-10">
+                    <div class="h-full w-full">
+                        {{-- milestone1 --}}
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full flex justify-center">
+                                <div class="absolute -top-3 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone1.png" class="h-full w-full object-cover rounded-l-lg" alt="">
+                                        </div>
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore1 = !seemore1 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
+                                            <p class="font-semibold text-center">June 1 2023</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -right-6 top-1" style=" width: 0; height: 0; border-top: 62px solid transparent; border-bottom: 64px solid transparent; border-left: 24px solid rgb(255, 255, 255, .6);"></div>
-                            </div>
-                        </div>
-                        <div class="absolute h-[134px] top-[15%] w-full justify-end">
-                            <div class="relative h-full w-[45%] flex z-10 float-right">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -left-6 bottom-[.35rem]" style=" width: 0; height: 0; border-top: 61px solid transparent; border-bottom: 63px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                        <p>DATE</p>
-                                        <p>HERE</p>
-                                    </div>
-                                    </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[20px] mt-[6px] z-10">
-                                        <!-- image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute h-[134px] w-full flex justify-start top-[30%]">
-                            <div class="relative h-full w-[45%] flex z-10 ">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[10px] mt-[6px] z-10">
-                                        <!--insert image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                </div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                    </div>
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -right-6 top-1" style=" width: 0; height: 0; border-top: 62px solid transparent; border-bottom: 64px solid transparent; border-left: 24px solid rgb(255, 255, 255, .6);"></div>
-                            </div>
-                        </div>
-                        <div class="absolute h-[134px] top-[15%] w-full justify-end top-[45%]">
-                            <div class="relative h-full w-[45%] flex z-10 float-right">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -left-6 bottom-[.35rem]" style=" width: 0; height: 0; border-top: 61px solid transparent; border-bottom: 63px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                        <p>DATE</p>
-                                        <p>HERE</p>
-                                    </div>
-                                    </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[20px] mt-[6px] z-10">
-                                        <!-- image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute h-[134px] w-full flex justify-start top-[60%]">
-                            <div class="relative h-full w-[45%] flex z-10 ">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[10px] mt-[6px] z-10">
-                                        <!--insert image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                </div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                    </div>
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -right-6 top-1" style=" width: 0; height: 0; border-top: 62px solid transparent; border-bottom: 64px solid transparent; border-left: 24px solid rgb(255, 255, 255, .6);"></div>
-                            </div>
-                        </div>
-                        <div class="absolute h-[134px] top-[15%] w-full justify-end top-[75%]">
-                            <div class="relative h-full w-[45%] flex z-10 float-right">
-                                <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                                </div>
-                                <!-- ARROW -->
-                                <div class="absolute -left-6 bottom-[.35rem]" style=" width: 0; height: 0; border-top: 61px solid transparent; border-bottom: 63px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                                {{-- date --}}
-                                <div class="font-montserrat font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                    <div>
-                                        <p>DATE</p>
-                                        <p>HERE</p>
-                                    </div>
-                                    </div>
-                                <div class="h-[120px] w-[300px] bg-white ml-[20px] mt-[6px] z-10">
-                                        <!-- image here -->
-                                </div>
-                                <div class="flex flex-col z-10">
-                                    <p class="font-bebas text-[24px] ml-[20px] mt-[6px]">caption here</p>
-                                    <p class="font-montserrat text-[14px] ml-[20px]">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
-        <div class="relative md:hidden h-[auto] w-full mt-[50px] flex flex-col bg-[#302121] items-center bg-cover  bg-repeat-norepeat" style="">
-            {{-- coverphoto --}}
-            <div class="absolute top-0 h-full w-full">
-                <img src="img/about/milestone.png" class="h-full w-full opacity-[25%]"  alt="">
-            </div>  
-            <div class="abolute z-10 h-[20%] flex flex-col items-center w-[90%] mt-4">
-                <div class="h-[60%] flex justify-center items-center">
-                    <p class="font-bebas text-2xl md:text-5xl tracking-wider text-white">Our company milestone</p>
-                </div>
-                <div class="h-[40%] flex items-start">
-                    <p class="text-center font-montserrat text-sm text-white leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
-            </div>
-            <div class="relative flex w-[90%] items-center justify-start h-[600px]">
-                <div class="absolute h-[80%] w-1 rounded-full bg-white top-[9%] z-20">
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white"></div>
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[20%]"></div>
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[40%]"></div>
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[60%]"></div>
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[80%]"></div>
-                    <div class="absolute ml-[-6px] h-4 w-4 rounded-full bg-white top-[100%]"></div>
-                </div>
-                <div class="w-full h-full ">
-                    <div class="absolute h-[85px]  w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute h-[85px] top-[16%] w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute h-[85px] top-[32%] w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute h-[85px] top-[48%] w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute h-[85px] top-[64%] w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute h-[85px] top-[80%] w-full justify-end">
-                        <div class="relative h-full w-[90%] flex z-10 float-right top-4">
-                            <div class="absolute h-full w-full bg-[#FFFFFF] opacity-[60%] z-0 rounded-l-lg rounded-r-md">
-                            </div>
-                            <!-- ARROW -->
-                            <div class="absolute -left-[24px] bottom-[.30rem]" style=" width: 0; height: 0; border-top: 40px solid transparent; border-bottom: 35px solid transparent; border-right: 24px solid rgb(255, 255, 255, .6);"></div>
-                            {{-- date --}}
-                            <div class="font-montserrat text-xs font-bold ml[10px] z-10 h-full flex items-center text-center">
-                                <div>
-                                    <p>DATE</p>
-                                    <p>HERE</p>
-                                </div>
-                                </div>
-                            
-                            <div class="flex flex-col  z-10">
-                                <p class="font-bebas text-[20px] ml-[5px] mt-[0px]">caption here</p>
-                                <p class="font-montserrat font-medium text-[9px] text-[14px] ml-[5px] text-justify">Donec et tincidunt justo. Curabitur at ullamcorper leo. Vivamus vitae turpis ex. Vestibulum hendrerit .</p>
-                            </div>
-                            <div class="h-[75px] w-[280px] bg-white ml-1 mr-1 mt-[6px] z-10">
-                                <!-- image here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-    </div>
-</div>
 
+                        {{-- milestone3 --}}
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full flex justify-center">
+                                <div class="absolute -top-3 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone3.png" class="h-full w-full object-cover rounded-l-lg" alt="">
+                                        </div>
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore3 = !seemore3 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
+                                            <p class="font-semibold text-center">DATE HERE</p>
+                                        </div>
+                                    </div>
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- milestone5 --}}
+                        <div class="h-1/3 w-full">
+                            <div class="relative h-2/4 w-full flex justify-center">
+                                <div class="absolute -top-3 flex left-0 w-11/12 z-20">
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        {{-- image --}}
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone5.png" class="h-full w-full object-cover rounded-l-lg" alt="">
+                                        </div>
+                                        {{-- caption --}}
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore5 = !seemore5 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- date --}}
+                                        <div class="font-montserrat m-auto lg:-mr-1 lg:mr-5 m-auto ml-2 lg:ml-5" style="width: 20%">
+                                            <p class="font-semibold text-center">DATE HERE</p>
+                                        </div>
+                                    </div>
+                                    {{-- triangle shape --}}
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-left: 25px solid rgb(255, 255, 255, .6);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- timeline LINE and CIRCLES --}}
+                    <div class="h-full w-2 flex justify-center items-center">
+                        <div class="relative h-5/6 w-1 rounded-full bg-white">
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 19%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 39%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 59%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 79%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 99%"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="h-full w-full">
+                        {{-- millestone2 --}}
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full flex justify-center">
+                                <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    
+                                    {{-- triangle shape --}}
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        {{-- date --}}
+                                        <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
+                                            <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
+                                        </div>
+                                        {{-- caption --}}
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore2 = !seemore2 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- image --}}
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone2.png" class="h-full w-full object-cover rounded-r-lg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone4 --}}
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    {{-- triangle shape --}}
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        {{-- date --}}
+                                        <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
+                                            <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
+                                        </div>
+                                        {{-- caption --}}
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore4 = !seemore4 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- image --}}
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone4.png" class="h-full w-full object-cover rounded-r-lg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone6 --}}
+                        <div class="h-1/3 w-full flex items-end">
+                            <div class="relative h-2/4 w-full w-full flex justify-center">
+                                <div class="absolute -top-3 flex right-0 w-11/12 z-20">
+                                    {{-- triangle shape --}}
+                                    <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.65rem solid transparent; border-bottom: 3.65rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                                    <div class="h-32 w-full rounded-lg flex" style="background-color:rgb(255, 255, 255, .6)">
+                                        {{-- date --}}
+                                        <div class="font-montserrat lg:-ml-1 lg:ml-5 m-auto mr-2 lg:mr-5 " style="width: 20%">
+                                            <p class="font-semibold md:text-base lg:text-lg text-center">DATE HERE</p>
+                                        </div>
+                                        {{-- caption --}}
+                                        <div class="flex items-center" style="width: 50%">
+                                            <div >
+                                                <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                                <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                                <div class="w-full flex justify-end items-center my-1">
+                                                    <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore6 = !seemore6 ">see more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- image --}}
+                                        <div class="p-2" style="width: 30%">
+                                            <img src="img/about/milestone6.png" class="h-full w-full object-cover rounded-r-lg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Mobile View --}}
+                <div class="md:hidden flex w-full h-auto py-10 gap-5 sm:gap-10 ">
+                    {{-- timeline LINE and CIRCLES --}}
+                    <div class="w-2 flex justify-center items-center">
+                        <div class="relative h-5/6 w-1 rounded-full bg-white" style="height: 86%">
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white "></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 19%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 39%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 59%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 79%"></div>
+                            <div class="absolute z-10 -left-1 h-3 w-3 rounded-full bg-white " style="top: 99%"></div>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        {{-- millestone1 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">June 1 2021</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore1 = !seemore1 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone1.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone2 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore2 = !seemore2 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone2.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone3 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore3 = !seemore3 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone3.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone4 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore4 = !seemore4 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone4.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone5 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore5 = !seemore5 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone5.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- millestone6 --}}
+                        <div class="h-auto w-full flex mb-5" >
+                            {{-- triangle shape --}}
+                            <div class="" style="margin-top: 0.35rem; width: 0; height: 0; border-top: 3.15rem solid transparent; border-bottom: 3.15rem solid transparent; border-right: 25px solid rgb(255, 255, 255, .6);"></div>
+                            <div class="h-28 w-full rounded-lg flex gap-1" style="background-color:rgb(255, 255, 255, .6)">
+                                {{-- date --}}
+                                <div class="font-montserrat -ml-2 sm:ml-5 m-auto mr-2 sm:mr-10 " style="width: 20%">
+                                    <p class="text-base md:text-xl font-bold text-center">DATE HERE</p>
+                                </div>
+                                {{-- Caption --}}
+                                <div class="flex items-center" style="width: 50%">
+                                    <div >
+                                        <h1 class="font-bebas text-xl sm:text-2xl tracking-wider">CAPTION HERE</h1>
+                                        <p class=" text-justify text-xs sm:text:sm" style="text-indent: 1.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; ">Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Donec et tincidunt justo. Vivamus vitae turpis ex. Vestibulum hendrerit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <div class="w-full flex justify-end items-center my-1">
+                                            <button href="" class=" text-black text-xs px-2 py-1 rounded-md flex items-center underline" @click="seemore6 = !seemore6 ">see more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- image --}}
+                                <div class="p-2" style="width: 30%">
+                                    <img src="img/about/milestone6.png" class="h-full w-full object-cover rounded-r-lg underline" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection('main')

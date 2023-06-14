@@ -144,7 +144,7 @@
     <div class="h-20 w-full bg-white bg-opacity-75 flex justify-center">
       <div class="h-full w-full sm:w-3/4 flex justify-center lg:justify-end">
         <div class="h-14 w-11/12 sm:w-11/12 md:w-3/4 lg:w-1/3 flex justify-center md:justify-start items-center gap-1 gap-x-2">
-          <a class="h-full w-1/4 rounded flex justify-center items-center border border text-gray-900 border-gray-300 opacity-50 text-lg">
+          <a class="h-full w-1/4 rounded flex justify-center items-center border text-gray-900 border-gray-300 text-lg opacity-50">
               <
           </a>
           <a href="{{ url('/career') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-white bg-danger ">

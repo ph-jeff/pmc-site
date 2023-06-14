@@ -1,0 +1,24 @@
+.imgSliderAbout {
+    /* background-image: url('../img/about/slide1.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    animation: changeImageAbout 15s infinite;
+}
+
+@keyframes changeImageAbout {
+    0% {
+        background-image: url('../img/about/slide1.png');
+    }
+    33.33% {
+        background-image: url('../img/about/slides2.png');
+    }
+    66.66% {
+        background-image: url('../img/about/slides3.png');
+    }
+    100% {
+        background-image: url('../img/about/slide1.png');
+    }
+}
+
+

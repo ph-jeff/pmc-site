@@ -65,7 +65,7 @@
                         <div class=" h-32 lg:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
                             <img class=" rounded-tl-2xl rounded-tr-2xl h-full w-full object-cover " src="img/news/newsRecom5.png" alt="" srcset="">
                         </div>
-                        <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
+                        <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
                             <button class="border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</button>
@@ -122,20 +122,20 @@
     <div class="h-20 w-full bg-white bg-opacity-75 flex justify-center">
         <div class="h-full w-full sm:w-3/4 flex justify-center lg:justify-end">
             <div class="h-14 w-11/12 sm:w-11/12 md:w-3/4 lg:w-1/3 flex justify-center md:justify-start items-center gap-1 gap-x-2">
-                <a href="{{ url('/news') }}" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border border-gray-300 text-lg">
+                <a href="{{ url('/news2') }}" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border border-gray-300 text-lg">
                     <
                 </a>
                 <a href="{{ url('/news') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300  text-red-900">
                     1
                 </a>
-                <a href="{{ url('/news2') }}" class="h-full w-2/12 rounded flex justify-center text-white items-center border border-gray-300 bg-danger">
+                <a href="{{ url('/news2') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300  text-red-900">
                     2
                 </a>
-                <a href="{{ url('/news3') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300  text-red-900">
+                <a href="{{ url('/news3') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-white bg-danger">
                     3
                 </a>
-                <a  href="{{ url('/news3') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300  text-red-900">   
-                    >   
+                <a class="h-full w-1/4 rounded flex justify-center items-center border text-gray-900 border-gray-300 text-lg opacity-50">   
+                    >
                 </a>
             </div>
         </div>

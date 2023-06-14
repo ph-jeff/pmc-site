@@ -5,24 +5,6 @@
 
 @section('main')
     <!-- Sticky Navigation Bar (Website View - career page) -->
-    <!-- <nav class="hidden md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
-        <div class="h-full w-[20%] flex items-center">
-            <a href="">
-                <img class="" src="img/pmc_logo.png" alt="logo" >
-            </a>
-        </div>
-        <div class="w-[50%] flex items-center justify-end">
-            <ul class="flex">
-                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
-                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
-            </ul>
-        </div>
-    </nav> -->
-    <!-- Navigation Bar  -->
     <nav class="hidden md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
         <div class="flex w-full h-20 justify-center items-center">
             <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between content-center">
@@ -32,7 +14,7 @@
                     </a>
                 </div>
                 <ul class="flex gap-1 text-center items-center">
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
+                    <li class="h-12 w-20 flex justify-center items-center bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
                     <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
                     <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
                     <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
@@ -149,7 +131,7 @@
                                     <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
-                                    <button class="border text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</button>
+                                    <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
                                 </div>
                             </div>
                           
@@ -163,7 +145,7 @@
                                     <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
-                                    <button class="border text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</button>
+                                    <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
                                 </div>
                             </div>
 
@@ -177,13 +159,13 @@
                                     <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
-                                    <button class="border text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</button>
+                                    <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
                                 </div>
                             </div>
                         </div>
                           
                         <div class="flex justify-center mt-6">
-                            <button class="border border-gray-800 mt-2 mb-2 h-12 md:h-12 w-32 sm:w-36 md:w-40 rounded-md hover:bg-danger hover:text-white font-medium">See More</button>
+                            <a href="/news" class="border border-gray-800 flex items-center justify-center mt-2 mb-2 h-12 md:h-12 w-32 sm:w-36 md:w-40 rounded-md hover:bg-danger hover:text-white font-medium">See More</a>
                         </div>
                     </div>
                 </div>
@@ -244,7 +226,7 @@
                                 <div class="wrapper">
                                     <ul class="marquee marquee flex justify-between items-center gap-3 items-center">
                                         <li>
-                                            <img src="img/partnership/partnership1.png" alt="1" class="big-img">
+                                            <img src="img/partnerships/partnership1.png" alt="1" class="big-img">
                                         </li>
                                         <li>
                                             <img src="img/partnerships/partnership2.png" alt="2" class="small-img">
@@ -273,7 +255,7 @@
                                     </ul>
                                     <ul class="marquee2 marquee flex justify-between items-center gap-3 items-center">
                                         <li>
-                                            <img src="img/partnership/partnership1.png" alt="1" class="big-img">
+                                            <img src="img/partnerships/partnership1.png" alt="1" class="big-img">
                                         </li>
                                         <li>
                                             <img src="img/partnerships/partnership2.png" alt="2" class="small-img">

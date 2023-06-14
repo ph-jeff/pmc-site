@@ -20,15 +20,21 @@
     {{-- css --}}
     <link rel="stylesheet" href="css/home1.css">
     <link rel="stylesheet" href="css/new.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/abouts.css">
     <link rel="stylesheet" href="css/partnership.css">
-
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    {{-- tailwind --}}
-    {{-- @vite('resources/css/app.css') --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
+
 </head>
-<body>
+<body class="relative" x-data="{
+    seemore1: false,
+    seemore2: false,
+    seemore3: false,
+    seemore4: false,
+    seemore5: false,
+    seemore6: false,
+}">
     <!-- Top Navigation Bar -->
     <div class="h-full bg-danger">
         <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
@@ -93,14 +99,7 @@
             </div>
         </div>
     </nav>
-    {{-- Sticky messenger icon --}}
-    {{-- <div class="w-[99%] md:min-h-[55px] h-[5vh] flex justify-end bottom-2 z-50 fixed bottom-0 rounded-full">
-        <div class="w-[9%] md:w-[4%] bg-white flex items-center justify-center rounded-full drop-shadow-lg shadow-gray-300">
-            <a href="" class="w-[90%] flex items-center justify-center m-5 bg-danger">
-                <img src="img/icons/messenger.png" class="w-[75%]" alt="messenger">
-            </a>
-        </div>
-    </div> --}}
+    
     @yield('main')
 
     <footer >
@@ -151,6 +150,8 @@
         </div>
     </footer>
     <script src="{{ mix('js/app.js') }}"></script>
+    @livewireScripts
+    @include('layouts.milestone-modal')
 </body>
 </html>
 
