@@ -14,12 +14,12 @@
                     </a>
                 </div>
                 <ul class="flex gap-1 text-center items-center">
-                    <li class="h-12 w-20 flex justify-center items-center bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+                    <a class="text-white text-base font-semibold  " href="/"><li class="h-12 w-20 flex justify-center items-center bg-danger"> Home </li></a>
+                    <a class="text-white text-base font-semibold" href="/about"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> About </li></a>
+                    <a class="text-white text-base font-semibold" href="/team"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Team </li></a>
+                    <a class="text-white text-base font-semibold" href="/news"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> News </li></a>
+                    <a class="text-white text-base font-semibold" href="/career"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Career </li></a>
+                    <a class="text-white text-base font-semibold" href="/contact"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Contact </li></a>
                 </ul>
             </div>
         </div>
@@ -123,12 +123,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                             <!-- Card 1 -->
                             <div class="bg-white shadow-md rounded-lg flex flex-col">
-                                <div class=" h-32 lg:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                                <div class="h-52 rounded-tl-2xl rounded-tr-2xl flex justify-center" >
                                     <img class="rounded-tl-2xl rounded-tr-2xl h-full w-full object-cover " src="img/news/news1.png" alt="" srcset="">
                                 </div>
                                 <div class="p-3 text-justify font-montserrat">
                                     <p class="text-lg lg:text-xl text-red-800 font-montserrat">Title Here</p>
-                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
                                     <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
@@ -137,12 +137,12 @@
                           
                             <!-- Card 2 -->
                             <div class="bg-white shadow-md rounded-lg flex flex-col">
-                                <div class=" h-32 lg:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                                <div class="h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
                                     <img class="rounded-tl-2xl rounded-tr-2xl h-full w-full object-cover " src="img/news/news2.png" alt="" srcset="">
                                 </div>
                                 <div class="p-3 text-justify font-montserrat">
                                     <p class="text-lg lg:text-xl text-red-800 font-montserrat">Title Here</p>
-                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
                                     <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
@@ -151,12 +151,12 @@
 
                             <!-- Card 3 -->
                             <div class="bg-white shadow-md rounded-lg flex flex-col">
-                                <div class=" h-32 lg:h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
+                                <div class="h-52  rounded-tl-2xl rounded-tr-2xl flex justify-center" >
                                     <img class="rounded-tl-2xl rounded-tr-2xl h-full w-full object-cover " src="img/news/news3.png" alt="" srcset="">
                                 </div>
                                 <div class="p-3 text-justify font-montserrat">
                                     <p class="text-lg lg:text-xl text-red-800 font-montserrat">Title Here</p>
-                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                                    <p class="text-base md:text-lg ">Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                                 <div class="mt-auto flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 text-sm md:text-base">
                                     <a href="/home-news" class="border text-center text-white bg-black mb-2 p-2  w-28 md:w-32 rounded-md hover:bg-danger">Read More</a>
@@ -168,6 +168,7 @@
                             <a href="/news" class="border border-gray-800 flex items-center justify-center mt-2 mb-2 h-12 md:h-12 w-32 sm:w-36 md:w-40 rounded-md hover:bg-danger hover:text-white font-medium">See More</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <hr class="border-gray-100 border-opacity-75">

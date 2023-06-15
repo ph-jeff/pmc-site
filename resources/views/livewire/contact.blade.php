@@ -25,12 +25,12 @@
                     </a>
                 </div>
                 <ul class="flex gap-1 text-center items-center">
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                    <li class="h-12 w-20 flex justify-center items-center bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+                    <a class="text-white text-base font-semibold  " href="/"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Home </li></a>
+                    <a class="text-white text-base font-semibold" href="/about"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> About </li></a>
+                    <a class="text-white text-base font-semibold" href="/team"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Team </li></a>
+                    <a class="text-white text-base font-semibold" href="/news"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> News </li></a>
+                    <a class="text-white text-base font-semibold" href="/career"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Career </li></a>
+                    <a class="text-white text-base font-semibold" href="/contact"><li class="h-12 w-20 flex justify-center items-center bg-danger"> Contact </li></a>
                 </ul>
             </div>
         </div>
@@ -112,28 +112,28 @@
                                     <div class="w-full grid grid-cols-1 lg:grid-cols-2 mt-10 gap-2 md:gap-5">
                                         <div class="w-full flex flex-col mb-2 md:mb-0">
                                             <label class="font-montserrat text-base" name="fname">First Name<span class="text-red-500">*</span></label>
-                                            <input wire:model="fname" type="text" class="h-10 w-full border-2">
+                                            <input wire:model="fname" type="text" class="h-10 w-full border-2 p-2">
                                             @error('fname') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                                         </div>
                                         <div class="w-full flex flex-col mb-2 md:mb-0">
                                             <label class="font-montserrat text-base " name="lname">Last Name<span class="text-red-500">*</span></label>
-                                            <input wire:model="lname" type="text" class="h-10 w-full border border-2">
+                                            <input wire:model="lname" type="text" class="h-10 w-full border border-2 p-2">
                                             @error('lname') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                                         </div>
                                         <div class="w-full flex flex-col mb-2 md:mb-0">
-                                            <label class="font-montserrat text-base " name="email">Email Address<span class="text-red-500">*</span></label>
-                                            <input wire:model="email" type="text" class="h-10 w-full border-2">
+                                            <label class="font-montserrat text-base" name="email">Email Address<span class="text-red-500">*</span></label>
+                                            <input wire:model="email" type="text" class="h-10 w-full border-2 p-2">
                                             @error('email') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                                         </div>
-                                        <div class="w-full flex flex-col">
+                                        <div class="w-full flex flex-col mb-2 md:mb-0">
                                             <label class="font-montserrat text-base " name="PhoneNumber"> Phone Number<span class="text-red-500">*</span></label>
-                                            <input wire:model="contact" type="number" class="lg:mb-5 h-10 w-full border-2">
+                                            <input wire:model="contact" type="number" class="h-10 w-full border-2 p-2">
                                             @error('contact') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
-                                    <div class="w-full mt-4 md:mt-0">
+                                    <div class="w-full mt-1 md:mt-4">
                                         <label class="font-montserrat text-base" name="message">Message<span class="text-red-500">*</span></label>
-                                        <textarea wire:model="message" class="h-20 w-full border-2"></textarea>
+                                        <textarea wire:model="message" class="h-20 w-full border-2 p-2"></textarea>
                                         @error('message') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                                     </div>
                                     <div class=" w-full flex justify-center my-5">

@@ -13,8 +13,8 @@ class Contact extends Component
     public $message;
     
     protected $rules = [
-        'fname' => 'required|min:6',
-        'lname' => 'required|min:6',
+        'fname' => 'required',
+        'lname' => 'required',
         'email' => 'required|email',
         'contact' => 'required',
         'message' => 'required',
