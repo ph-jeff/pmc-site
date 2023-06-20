@@ -60,7 +60,7 @@
                 <div class=" h-auto w-5/6 md:flex gap-0 md:gap-14 lg:gap-14">
                     <!-- MAAM JSS -->
                     <div class="w-full group flex flex-col items-center font-montserrat rounded-2xl hover:bg-danger p-2" @click="JSS = true">
-                        <img class="rounded-full hover-rounded-2xl" src="img/team/JSSb.png" alt="MAAM JSS" >
+                        <img class="rounded-full hover-rounded-2xl" src="img/team/JSSb.jpg" alt="MAAM JSS" >
                         <div class="mt-2">
                             <p class="text-lg font-bold text-center group-hover:text-white" >MAAM JSS</p>
                             <p class="text-sm md:text-base font-medium text-center text-gray-800 group-hover:text-white">Chief Operation Officer</p>
