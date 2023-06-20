@@ -7,12 +7,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    /* background-color: rgb(88, 88, 88);
-    background-blend-mode: multiply; */
+    background-color: rgb(88, 88, 88);
+    background-blend-mode: multiply;
     animation: changeImageAbout 5s infinite;
-}
+} */
 
-@keyframes changeImageAbout {
+/* @keyframes changeImageAbout {
     0% {
         background-image: url('../img/about/slide1.png');
         animation: changeImageAbout 5s infinite;

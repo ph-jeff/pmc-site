@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/abouts.css">
     <link rel="stylesheet" href="css/partnership.css">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
 
 </head>
