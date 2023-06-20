@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        {{-- WAREHOUSE --}}
+        {{-- WAREHOUSE --}} 
         <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
           <div class="h-40 lg:h-52 lg:w-4/12">
             <img src="img/career/warehousestaff.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">

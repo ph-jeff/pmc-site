@@ -53,7 +53,7 @@
                     <h1 class="font-bebas text-3xl sm:text-4xl md:text-5xl md:tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Our Team</h1>
                     <h2 class="font-montserrat text-xl sm:text-2xl md:text-3xl mt-2 ">THE MANAGEMENT</h2>
                 </div>
-            </div>
+            </div>                     
 
             <!-- THE MANAGEMENT -->
             <div class="h-auto flex justify-center mt-1 md:mt-10">

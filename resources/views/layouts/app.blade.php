@@ -53,7 +53,7 @@
                         <li><a href=""><img class="h-3" src="img/icons/mobile.png" alt="icons"></a></li>
                         <li class="font-semibold text-white">0936 153 2369</li>
                     </div>
-                    </ul>
+                </ul>
             </div>
         </div>
     </div>
