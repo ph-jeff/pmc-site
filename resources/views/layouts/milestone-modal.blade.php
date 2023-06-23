@@ -25,7 +25,7 @@
   </style>
 
   {{-- milestone1 --}}
-  <div x-show="seemore1" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+  <div x-cloak x-show="seemore1 || localStorage.getItem('modalVisible')" class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore1 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore1 = false">&times;</button>
@@ -48,7 +48,7 @@
   </div>
   
   {{-- milestone2 --}}
-  <div x-show="seemore2" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+  {{-- <div x-cloak x-show="seemore2"  class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore2 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore2 = false">&times;</button>
@@ -68,10 +68,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   
   {{-- milestone3 --}}
-  <div x-show="seemore3" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+  {{-- <div x-cloak x-show="seemore3"  class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore3 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore3 = false">&times;</button>
@@ -91,10 +91,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   
   {{-- milestone4 --}}
-  <div x-show="seemore4" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+  {{-- <div x-cloak x-show="seemore4"  class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore4 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore4 = false">&times;</button>
@@ -114,10 +114,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   
   {{-- milestone5 --}}
-  <div x-show="seemore5" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+  {{-- <div x-cloak x-show="seemore5"  class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore5 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore5 = false">&times;</button>
@@ -137,10 +137,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   
    {{-- milestone6 --}}
-   <div x-show="seemore6" xcloak class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
+   {{-- <div x-cloak x-show="seemore6" class="z-50 h-screen w-screen bg-black bg-opacity-75 fixed top-0 flex justify-center items-center">
     <div class="min-h-auto w-11/12 sm:w-11/12 md:w-7/12 lg:w-2/6 bg-white rounded-xl " @click.outside="seemore6 = false">
       <div class="flex justify-end top-0">
         <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="seemore6 = false">&times;</button>
@@ -161,4 +161,4 @@
       </div>
     </div>
   </div>
-  
+   --}}

@@ -45,6 +45,8 @@
     ERIKA: false,
 
 }">
+
+@include('layouts.team-modal')
     <div class="w-=full flex justify-center bg-white bg-opacity-75">
         <div class="w-3/4 sm:w-3/5 md:w-full lg:w-10/12">
             <div class="flex justify-center">
@@ -195,7 +197,6 @@
             </div>
         </div>
     </div>
-    @include('layouts.team-modal')
 </main>
     
 @endsection('main')

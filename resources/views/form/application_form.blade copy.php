@@ -9,169 +9,159 @@
     </div>
     <div class="w-[50%] flex items-center justify-end">
         <ul class="flex">
-          <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
-          <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-          <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-          <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-          <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-          <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
+            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
+            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
+            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
+            <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
+            <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
         </ul>
     </div>
-  </nav>
-<div class="flex justify-center background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
-    <div class="w-full bg-white bg-opacity-75 flex justify-center">
-        {{-- In work, do what you enjoy. --}}
-        <form class=" w-9/12 mt-14">
-            <div class="text-center">
-                <h1 class="font-semibold text-2xl font-semibold leading-10"> Job Application Form </h1>
-                <p class="font-normal text-sm leading-10 text-lg leading-10 font-normal"> Please Fill Out the Form to Submit Your Job Application!</p>
+</nav>
+<div class="background-cover bg-cover bg-norepeat" style="background-image: url('img/coverphoto.jpg');">
+    <div class="bg-white bg-opacity-75 flex justify-center">
+        <form action="" class="font-montserrat w-11/12 sm:w-10/12 md:w-4/5 lg:w-9/12 my-10 md:my-16 ">
+            <h1 class="text-lg md:text-xl font-semibold text-center">Job Application Form</h1>
+            <p class="text-sm md:text-lg text-center ">Please Fill Out the Form to Submit Your Job Application!</p>
+            <div class="mt-5 md:mt-10">
+                <label for="name">Name: <span class="text-red-900">*</span></label>
+                <div class="md:flex gap-4 mt-1">
+                    <input type="text" name="fname" id="fname" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md::mb-0" placeholder="First Name">
+                    <input type="text" name="mname" id="mname" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md::mb-0" placeholder="Middle Name">
+                    <input type="text" name="lname" id="lname" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="Last Name">
+                </div>
             </div>
-            <div  class="flex mt-10">
-                <h3> Name: <span class="text-red-500">*</span></h3>
+            <div class="mt-3">
+                <label for="email">Email: <span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <input type="email" name="email" id="email" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="ex.myemail@gmail.com">
+                </div>
             </div>
-            <div class="flex-row gap-5 md:flex xl:w-full">
-                <input type="text" placeholder="First name" class="mt-2 border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full lg:w-[33%] lg:h-[55px] rounded-md">
-                <input type="text" placeholder="Middle name" class="mt-2 border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  lg:h-[55px] rounded-md">
-                <input type="text" placeholder="Last name" class="mt-2 border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full lg:h-[55px] rounded-md">
+            <div class="mt-3">
+                <label for="contact">Contact Number: <span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <input type="tel" name="contact" id="contact" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="#### ### ####">
+                </div>
             </div>
-            <div  class="flex mt-2 lg:mt-5 mb-2">
-                <h3> Email: <span class="text-red-500">*</span> </h3> 
+            <div class="mt-3">
+                <label for="address">Present Address: <span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <input type="text" name="address" id="address" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full">
+                </div>
             </div>
-            <div class="flex w-full">
-                <input type="text" placeholder="ex.myemail@gmail.com" class=" border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full rounded-md">
-            </div>
-            <div class="flex mt-2 lg:mt-5 mb-2">
-                <h3> Contact Number: <span class="text-red-500">*</span> </h3>     
-            </div>
-            <div class="flex w-full ">
-                <input type="tel" placeholder="ex.myemail@gmail.com" class=" border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full rounded-md">
-            </div>
-            <div  class="flex mt-2 lg:mt-5 mb-2">
-                <h3> Present Address:  <span class="text-red-500">*</span></h3>
-            </div>
-            <div class="flex w-full ">
-                <input type="text" class="border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  rounded-md">
-            </div>
-            <div class="mt-2 lg:mt-5 mb-2">
-                <div class="grid md:grid-cols-3 gap-4 ">
-                    <div class="cols-2">
-                        <h1> Birthday: <span class="text-red-500">*</span> </h1>
-                        <div class="dropdown">
-                            <div class="dropdown-content mt-2">
-                                <input type="date" class="border border-gray-400 p-2 rounded w-full " />
-                            </div>
-                        </div>
-                    </div>
-                    {{-- DROPDOWN CONTENTS --}}
-                    <div class="content-center">
-                        <h1> Status: <span class="text-red-500">*</span> </h1>
-                        <select class="mt-2 border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  rounded-md">
-                            <option value="" class="w-auto" disabled selected>Choose </option>
-                            <option class="w-auto">Maried</option>
-                            <option class="w-auto">Single</option>
-                            <option class="w-auto">Window</option>
-                            <option class="w-auto">Separated</option>
-                            <option class="w-auto">Others</option>
+            <div class="mt-3 md:flex gap-4">
+                <div class="w-full mb-3 md:mb-0">
+                    <label for="birthdate">Birthday: <span class="text-red-900">*</span></label>
+                    <input type="date" name="birthdate" id="birthdate" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
+                </div>
+                <div class="w-full mb-3 md:mb-0">
+                    <label for="Status">Status: <span class="text-red-900">*</span></label>
+                    <div>
+                        <select class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
+                            <option value="" disabled selected>Choose </option>
+                            <option >Maried</option>
+                            <option >Single</option>
+                            <option >Window</option>
+                            <option >Separated</option>
+                            <option >Others</option>
                         </select>
                     </div>
-                    <div class="">
-                        <div class="content-center">
-                            <h1> Educational background: <span class="text-red-500">*</span></h1>
-                            <select class="mt-2 border border-gray-400 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  rounded-md ">
-                                <option value="" disabled selected>Choose </option>
-                                <option>High school Level/graduate</option>
-                                <option>College Level</option>
-                                <option>Bachelor's Degree</option>
-                                <option>Vocational Degree</option>
-                                <option>Postgraduate</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="w-full">
+                    <label for="education">Educational Background: <span class="text-red-900">*</span></label>
+                    <div>
+                        <select class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
+                            <option value="" disabled selected>Choose </option>
+                            <option >High School Level/Graduate</option>
+                            <option >College</option>
+                            <option >Bachelor's Degree</option>
+                            <option >Vocational Degree</option>
+                            <option >Postgraduate</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="mt-2 lg:mt-5 mb-2">
-                <div class="content-center">
-                    <h1> Position: <span class="text-red-500">*</span></h1>
-                    <select class="mt-2 border border-gray-400 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  rounded-md ">
-                        <option value="" disabled selected> -- Select position -- </option>
-                        <option>Sales Associate</option>
-                        <option>Sales Support Associate</option>
-                        <option>Sales Manager</option>
-                        <option>Sales Head</option>
+            <div class="mt-3">
+                <label for="position">Position: <span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <select class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full">
+                        <option value="" disabled selected>Choose </option>
+                        <option >Lorem</option>
+                        <option >Lorem</option>
+                        <option >Lorem</option>
+                        <option >Lorem</option>
+                        <option >Lorem</option>
                     </select>
                 </div>
             </div>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="col-span-1 mt-2 mb-1 md:mt-5 ">
-                    <div class="content-center">
-                        <h1> How did you know about us? <span class="text-red-500">*</span></h1>
-                        <select class="mt-2 border border-gray-400 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  rounded-md">
+            <div class="mt-3 md:flex gap-4">
+                <div class="w-full mb-3 md:mb-0">
+                    <label for="">How did you know about us? <span class="text-red-900">*</span></label>
+                    <div>
+                        <select class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
                             <option value="" disabled selected>Choose </option>
-                            <option>Facebook</option>
-                            <option>Indeed</option>
-                            <option>Linkedin</option>
-                            <option>Jobstreet</option>
+                            <option >Facebook</option>
+                            <option >Indeed</option>
+                            <option >Linkedin</option>
+                            <option >Jobstreet</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-span-1 mt-0 mb-2 md:mt-5 ">
-                    <div class="content-center">
-                        <h1> Recruiter or invited by (Name of HR) <span class="text-red-500">*</span></h1>
-                        <select class="mt-2 border border-gray-400 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-fullrounded-md ">
+                <div class="w-full mb-3 md:mb-0">
+                    <label for="">Recruiter or invited by (Name of HR) <span class="text-red-900">*</span></label>
+                    <div>
+                        <select class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
                             <option value="" disabled selected>Choose </option>
-                            <option>Honey</option>
-                            <option>Alex</option>
-                            <option>Erika</option>
-                            <option>Other</option>
+                            <option >Honey</option>
+                            <option >Alex</option>
+                            <option >Erika</option>
+                            <option >Other</option>
                         </select>
                     </div>
                 </div>
             </div>
-            {{-- TEXTAREA FORM  --}}
-            <div  class="flex mt-2 md:mt-5 mb-2">
-                <h3> Character references(Name, position, Contact no. Relationship, campany & years Acquainted) Give three (3) Not related to you whom you have known at least one year   <span class="text-red-500">*</span> </h3>
+            <div class="mt-3">
+                <label for="character">Character References (Name, Position, Contact No. Relationship, Company & Years Acquainted) Give Three (30) Not Related to you whom you have known at least one year </label><span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <textarea name="reference" id="reference" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                </div>
             </div>
-            <div class="flex w-full ">
-                <textarea type="text" placeholder="Your answer" class="border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full  h-auto rounded-md"></textarea>
+            <div class="mt-3">
+                <label for="characteristic">Discuss in order of importance to you, the personal characteristics which you feel are your strength and weaknesses. </label><span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <textarea name="characteristic" id="characteristic" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                </div>
             </div>
-            <div  class="flex mt-3 md:mt-5 mb-2">
-                <h3> Discuss in order of importance to you, the personal characteristics which you feel are your strength and weakness  <span class="text-red-500">*</span> </h3>
+            <div class="mt-3">
+                <label for="plan">What is your short-term and long-term plan? </label><span class="text-red-900">*</span></label>
+                <div class="mt-1">
+                    <textarea name="plan" id="plan" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                </div>
             </div>
-            <div class="flex w-full ">
-                <textarea type="text" placeholder="Your answer" class="border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full rounded-md"></textarea>
-            </div>
-            <div  class="flex mt-2 md:mt-5 mb-2">
-                <h3> What are your short-term and long-term plan?  <span class="text-red-500">*</span> </h3>
-            </div>
-            <div class="flex w-full">
-                <textarea type="text" placeholder="Your answer" class="border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 w-full rounded-md"></textarea>
-            </div>
-            <div  class="flex mt-2 md:mt-5 mb-2">
-                <h3> Kindly upload your curriculum vitae  <span class="text-red-500">*</span> </h3>
-            </div>
-            <div class="flex w-full">         
-            <div class="flex items-center justify-center w-full">
-                <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2  border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 rounded-md">
-                    <div class="flex-row items-center justify-center text-center pt-5 pb-6 ">
-                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">Click to upload</p>
-                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 hidden md:block">or drag and drop</p>
-                        <p class="text-xs text-gray-500 dark:text-gray-400">Docs and pdf with maximum of 5mb data.</p>
-                    </div>
-                    <input id="dropzone-file" type="file" class="hidden" />
-                </label>
-            </div> 
+            <div class="mt-3">
+                <label for="resume">Kindly upload your curriculum vitae or resume. </label><span class="text-red-900">*</span></label>
+                <div class="mt-1"> 
+                    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-52 border-dashed  border border-gray-400 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 rounded-md">
+                        <div class="flex-row items-center justify-center text-center pt-5 pb-6 ">
+                            <div class="w-full flex justify-center"><img class="w-16 x" src="img/career/upload.png" alt=""></div>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">Click to upload</p>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 hidden md:block">or drag and drop</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">Docs and pdf with maximum of 5mb data.</p>
+                        </div>
+                        <input id="dropzone-file" type="file" class="hidden" />
+                    </label>
+                </div>
             </div>
             {{-- END APPLICATION FORM --}}
-            <div class="flex justify-center align-items gap-5 text-center mb-10 md:mb-10 mt-10 lg:mt-10 bg-gray-">
-                <button class="px-4 py-2 border border-black text-black w-40 h-42 hover:bg-red-900  hover:border-red-900 hover:text-white">Back</button>
-                <button type="submit" class="px-4 py-2  w-40 h-42 bg-black hover:bg-red-900 text-white ">
+            <div class="flex justify-center gap-5 text-center mt-10 md:mt-10">
+                <a href="/career" class="px-4 py-2 border border-black text-black w-40 h-42 hover:bg-red-900  hover:border-red-900 hover:text-white">Back</a>
+                <a type="submit" class="px-4 py-2  w-40 h-42 bg-black hover:bg-red-900 text-white ">
                     Submit  
-                </button>
+                </a>
             </div>
         </form>
     </div>
 </div>
-
     {{-- <div class="">
         @livewire('application-form')
     </div> --}}

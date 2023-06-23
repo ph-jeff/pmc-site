@@ -50,4 +50,6 @@ Route::get('/sample', function () {
     return view('sample');
 });
 
-
+Route::get('/modal', function () {
+    return view('modal');
+});

@@ -23,11 +23,14 @@
     <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/partnership.css">
-
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    {{-- tailwind --}}
-    {{-- @vite('resources/css/app.css') --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var modal = document.getElementById('myModal');
+          modal.style.display = 'none';
+        });
+      </script>
 </head>
 <body class="relative" x-data="{
     seemore1: false,
@@ -52,10 +55,14 @@
                         <li class="font-semibold text-[.7rem] text-white mr-2 md:mr-5">hrad@philippians.ph</li>
                     </div>
                     <div class="flex items-center gap-2">
+                      
                         <li><a href=""><img class="h-3" src="img/icons/mobile.png" alt="icons"></a></li>
+                      
                         <li class="font-semibold text-[.7rem] text-white">0936 153 2369</li>
-                    </div>
+                    </
+                    div>
                 </ul>
+                
             </div>
         </div>
     </div>
@@ -219,6 +226,7 @@
     </footer>
     <script src="{{ mix('js/app.js') }}"></script>
     
-@include('layouts.milestone-modal')
+    @include('layouts.milestone-modal')
+    @livewireScripts
 </body>
 </html>
