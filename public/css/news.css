@@ -1,26 +1,24 @@
 .imgSliderNews{
-    background-image: url('../img/bg/bg3a.jpg');
+    background-image: url('../img/homepage/bg3a.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-color: rgb(88, 88, 88);
-    background-blend-mode: multiply;
-    animation: changeImage 20s  infinite;
+    animation: changeImageNews 20s  infinite;
 }
-@keyframes changeImage {
+@keyframes changeImageNews {
     0%{
-        background-image: url('../img/bg/bg3a.jpg');
+        background-image: url('../img/homepage/bg3a.jpg');
     }
     25%{
-        background-image: url('../img/bg/bg1a.jpg');
+        background-image: url('../img/homepage/bg1a.jpg');
     }
     50%{
-        background-image: url('../img/bg/bg2a.jpg');
+        background-image: url('../img/homepage/bg2a.jpg');
     }
     75%{
-        background-image: url('../img/bg/bg4a.jpg');
+        background-image: url('../img/homepage/bg4a.jpg');
     }
     100%{
-        background-image: url('../img/bg/bg3a.jpg');
+        background-image: url('../img/homepage/bg3a.jpg');
     }
 }

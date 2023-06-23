@@ -39,7 +39,7 @@
                 <button class="font-bold m-2 mr-4 opacity-60 hover:opacity-100" @click="JSS = false">&times;</button>
             </div>
             <div class="flex justify-center">
-                <img class="rounded-full w-36 sm:w-44 md:w-52" src="img/team/JSSb.png" alt="" srcset="">
+                <img class="rounded-full w-36 sm:w-44 md:w-52" src="img/team/JSSb.jpg" alt="" srcset="">
             </div>
             <div class="flex flex-col items-center mt-2 ">
                 <p class="font-montserrat font-bold text-lg text-gray-900 text-center bg-white">TEXT HERE</p>

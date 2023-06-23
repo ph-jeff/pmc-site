@@ -8,7 +8,7 @@
 <nav class="hidden md:min-h-[91px] md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
     <div class="h-full w-[20%] flex items-center">
         <a href="">
-            <img class="" src="img/pmc_logo.png" alt="logo" >
+            <img class="" src="img/pmclogo.png" alt="logo" >
         </a>
     </div>
     <div class="w-[50%] flex items-center justify-end">
