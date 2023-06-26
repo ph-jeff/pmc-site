@@ -5,8 +5,8 @@
                 {{-- <h1>{{ session('successMessage') }}</h1> --}}
                 <script>
                     Swal.fire(
-                        'Thank you!',
-                        'Your application has been received. We will be in touch and contact you soon.'
+                        'Application Submitted!',
+                        'success'
                     )
                 </script>
             </div>
@@ -16,55 +16,51 @@
             <p class="text-sm md:text-lg text-center ">Please Fill Out the Form to Submit Your Job Application!</p>
             <div class="mt-5 md:mt-10">
                 <label for="name">Name <span class="text-red-900">*</span></label>
-                <div class="md:flex gap-2 mt-1">
-                    <div class="flex flex-col w-full">
-                        <label for="" class="sr-only">First name: </label>
-                        <input type="text" wire:model="firstname" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="First Name">
-                        @error('firstname') <div class="error text-red-900 font-medium">{{ $message }}</div> @enderror
-                    </div>
-                    <div class="flex flex-col w-full">
-                        <label for="" class="sr-only">Middle name: </label>
-                        <input type="text" wire:model="middlename" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="Middle Name">
-                        @error('middlename') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
-                    </div>
-                    <div class="flex flex-col w-full">
-                        <label for="" class="sr-only">Last name </label>
-                        <input type="text" wire:model="lastname" class="block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="Last Name">
-                        @error('lastname') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
-                    </div>
+                <div class="md:flex gap-4 mt-1">
+                    <label for="" class="sr-only">First name: </label>
+                    <input type="text" wire:model="firstname" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="First Name">
+                    @error('firstname') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
+                    
+                    <label for="" class="sr-only">Middle name: </label>
+                    <input type="text" wire:model="middlename" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="Middle Name">
+                    @error('middlename') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
+                    
+                    <label for="" class="sr-only">Last name: </label>
+                    <input type="text" wire:model="lastname" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full mb-1 md:mb-0" placeholder="Last Name">
+                    @error('lastname') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                     
                 </div>
             </div>
             <div class="mt-3">
                 <label for="">Email <span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <input type="email" wire:model="email" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full" placeholder="ex.myemail@gmail.com">
+                    <input type="email" wire:model="email" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="ex.myemail@gmail.com">
                     @error('email') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="mt-3">
                 <label for="">Contact Number <span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <input type="number" wire:model="contactnum" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full" placeholder="#### ### ####">
+                    <input type="number" wire:model="contactnum" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="#### ### ####">
                     @error('contactnum') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="mt-3">
                 <label for="">Present Address <span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <input type="text" wire:model="address" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full">
+                    <input type="text" wire:model="address" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full">
                     @error('address') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>
-            <div class="mt-3 md:flex gap-2">
+            <div class="mt-3 md:flex gap-4">
                 <div class="w-full mb-3 md:mb-0">
                     <label for="birthdate">Birthday <span class="text-red-900">*</span></label>
-                    <input type="date" wire:model="birthdate" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base  sm:leading-6 w-full">
+                    <input type="date" wire:model="birthdate" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full">
                     @error('birthdate') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
                 <div class="w-full mb-3 md:mb-0">
                     <label for="Status">Status <span class="text-red-900">*</span></label>
-                    <select wire:model="status" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent px-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
+                    <select wire:model="status" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
                         @foreach ($statuses as $chapter)
                             <option value="{{ $chapter }}" @if ($loop->first && $status) disabled @endif>{{ $chapter }}</option>
                         @endforeach
@@ -72,9 +68,9 @@
                     @error('status') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
                 <div class="w-full">
-                    <label for="education">Educational Background <span class="text-red-900">*</span></label>
+                    <label for="education">Educational Background: <span class="text-red-900">*</span></label>
                     <div>
-                        <select wire:model="educational" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent px-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
+                        <select wire:model="educational" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
                             @foreach ($educationals as $chapter)
                                 <option value="{{ $chapter }}"  @if ($loop->first && $educational) disabled @endif>{{ $chapter }}</option>
                             @endforeach
@@ -86,7 +82,7 @@
             <div class="mt-3">
                 <label for="position">Position: <span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <select wire:model="position" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent px-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
+                    <select wire:model="position" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
                         @foreach ($positions as $chapter)
                             <option value="{{ $chapter }}"  @if ($loop->first && $position) disabled @endif>{{ $chapter }}</option>
                         @endforeach
@@ -98,7 +94,7 @@
                 <div class="w-full mb-3 md:mb-0">
                     <label for="">How did you know about us? <span class="text-red-900">*</span></label>
                     <div>
-                        <select wire:model="know" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent px-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
+                        <select wire:model="know" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
                             @foreach ($knows as $chapter)
                                 <option value="{{ $chapter }}" @if ($loop->first && $know) disabled @endif>{{ $chapter }}</option>
                             @endforeach
@@ -109,7 +105,7 @@
                 <div class="w-full mb-3 md:mb-0">
                     <label for="">Recruiter or invited by (Name of HR) <span class="text-red-900">*</span></label>
                     <div>
-                        <select wire:model="Recruiter" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent px-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
+                        <select wire:model="Recruiter" class="h-11 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base  sm:leading-6 w-full form-control @error('chapter_id') is-invalid @enderror" placeholder="Menu">
                             @foreach ($Recruiters as $chapter)
                                 <option value="{{ $chapter }}" @if ($loop->first && $Recruiter) disabled @endif>{{ $chapter }}</option>
                             @endforeach
@@ -121,21 +117,21 @@
             <div class="mt-3">
                 <label for="character">Character References (Name, Position, Contact No. Relationship, Company & Years Acquainted) Give Three (3) Not Related to you whom you have known at least one year </label><span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <textarea name="" id="" cols="20" rows="10" wire:model="character_references" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent px- text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                    <textarea name="" id="" cols="20" rows="10" wire:model="character_references" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
                     @error('character_references') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="mt-3">
                 <label for="characteristic">Discuss in order of importance to you, the personal characteristics which you feel are your strength and weaknesses. </label><span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <textarea name="" id="" cols="20" rows="10" wire:model="character" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                    <textarea name="" id="" cols="20" rows="10" wire:model="character" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
                     @error('character') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="mt-3">
                 <label for="plan">What is your short-term and long-term plan? </label><span class="text-red-900">*</span></label>
                 <div class="mt-1">
-                    <textarea name="" id="" cols="20" rows="10" wire:model="plan" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
+                    <textarea name="" id="" cols="20" rows="10" wire:model="plan" class="h-14 block flex-1 border border-gray-400 rounded bg-transparent p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm md:text-base sm:leading-6 w-full" placeholder="Your Answer"></textarea>
                     @error('plan') <span class="error text-red-900 font-medium">{{ $message }}</span> @enderror
                 </div>
             </div>

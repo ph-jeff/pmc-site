@@ -50,7 +50,7 @@
         <div class="w-3/4 sm:w-3/5 md:w-full lg:w-10/12">
             <div class="flex justify-center">
                 <div class="text-center mt-12 md:mt-16">
-                    <h1 class="font-bebas text-3xl sm:text-4xl md:text-5xl md:tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Our Team</h1>
+                    <h1 class="font-bebas text-3xl sm:text-4xl md:text-5xl md:tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-red-900 via-red-800 to-red-500">Our Team</h1>
                     <h2 class="font-montserrat text-xl sm:text-2xl md:text-3xl mt-2 ">THE MANAGEMENT</h2>
                 </div>
             </div>                     

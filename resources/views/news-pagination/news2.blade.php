@@ -57,7 +57,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-2 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-red-900">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-red-900">Read More</a>
                         </div>
                     </div>
                     <div class="h-auto lg:h-auto lg:w-auto w-full rounded-2xl shadow-lg shadow-gray-200 mb-2 md:mb-0">
@@ -68,7 +68,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</a>
                         </div>
                     </div>
                     <div class="h-auto lg:h-auto lg:w-auto w-full rounded-2xl shadow-lg shadow-gray-200 mb-2 md:mb-0">
@@ -79,7 +79,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</a>
                         </div>
                     </div>
                     <div class="h-auto lg:h-auto lg:w-auto w-full  rounded-2xl shadow-lg shadow-gray-200 mb-2 md:mb-0">
@@ -90,7 +90,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-red-900">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-red-900">Read More</a>
                         </div>
                     </div>
                     <div class="h-auto lg:h-auto lg:w-auto w-full rounded-2xl shadow-lg shadow-gray-200 mb-2 md:mb-0">
@@ -101,7 +101,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</a>
                         </div>
                     </div>
                     <div class="h-auto lg:h-auto lg:w-auto w-full rounded-2xl shadow-lg shadow-gray-200" >
@@ -112,7 +112,7 @@
                         <p class="text-base lg:text-xl  text-red-800 font-montserrat ml-2 ">Title Here</p>
                         <p class="text-justify ml-2 mr-2 mt-2 text-sm lg:text-base font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div class="w-full  flex justify-start lg:justify-center ml-2 lg:ml-0 mb-3 mt-2 text-base">
-                            <button class="border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</button>
+                            <a href="/home-news" class="flex justify-center items-center border text-white bg-black h-10 w-32 rounded hover:bg-danger">Read More</a>
                         </div>
                     </div>
                 </div>

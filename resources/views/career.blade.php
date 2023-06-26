@@ -5,22 +5,20 @@
 @section('main')
 <!-- Sticky Navigation Bar (Website View - career page) -->
 <nav class="hidden md:h-20 md:flex md:justify-around md:sticky md:top-0 md:z-50 md:bg-black">
-  <div class="flex w-full h-20 justify-center items-center">
-      <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between content-center">
-          <div>
-              <a href="/">
-                  <img class="" src="img/pmclogo.png" alt="logo" >
-              </a>
-          </div>
-          <ul class="flex gap-1 text-center items-center">
-            <a class="text-white text-base font-semibold  " href="/"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Home </li></a>
-            <a class="text-white text-base font-semibold" href="/about"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> About </li></a>
-            <a class="text-white text-base font-semibold" href="/team"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Team </li></a>
-            <a class="text-white text-base font-semibold" href="/news"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> News </li></a>
-            <a class="text-white text-base font-semibold" href="/career"><li class="h-12 w-20 flex justify-center items-center bg-danger"> Career </li></a>
-            <a class="text-white text-base font-semibold" href="/contact"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Contact </li></a>
-        </ul>
-      </div>
+  <div class="h-full w-[20%] flex items-center">
+      <a href="">
+        <img class="" src="img/pmclogo.png" alt="logo" >
+      </a>
+  </div>
+  <div class="w-[50%] flex items-center justify-end">
+      <ul class="flex">
+        <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold  " href="/"> Home </a></li>
+        <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
+        <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
+        <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
+        <li class="p-3 px-5 bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
+        <li class="p-3 px-5 hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+      </ul>
   </div>
 </nav>
 <main>
@@ -39,7 +37,7 @@
         {{-- SALES --}}
         <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
           <div class="h-40 lg:h-52 lg:w-4/12">
-            <img src="img/career/sales.png" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
+            <img src="img/career/sales2.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
           </div>
           <div class="min-h-0 h-auto lg:w-8/12 px-3 pt-1 pb-3">
             <div>
@@ -104,7 +102,7 @@
             </div>
           </div>
         </div>
-        {{-- WAREHOUSE --}} 
+        {{-- WAREHOUSE --}}
         <div class="h-auto max-w-full lg:flex rounded-xl lg:rounded-none border-2 lg:border-none mb-3">
           <div class="h-40 lg:h-52 lg:w-4/12">
             <img src="img/career/warehousestaff.jpg" class="h-full w-full object-cover rounded-t-xl lg:rounded-none lg:transform lg:scale-95 lg:hover:scale-100" alt="">
@@ -144,10 +142,10 @@
     <div class="h-20 w-full bg-white bg-opacity-75 flex justify-center">
       <div class="h-full w-full sm:w-3/4 flex justify-center lg:justify-end">
         <div class="h-14 w-11/12 sm:w-11/12 md:w-3/4 lg:w-1/3 flex justify-center md:justify-start items-center gap-1 gap-x-2">
-          <a class="h-full w-1/4 rounded flex justify-center items-center border text-gray-900 border-gray-300 text-lg opacity-50">
+          <a href="#" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border border-gray-300 opacity-50">
               <
           </a>
-          <a href="{{ url('/career') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-white bg-danger ">
+          <a href="{{ url('/career') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-white bg-danger">
               1
           </a>
           <a href="{{ url('/career2') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-red-900">
@@ -156,7 +154,7 @@
           <a href="{{ url('/career3') }}" class="h-full w-2/12 rounded flex justify-center items-center border border-gray-300 text-red-900">
               3
           </a>
-          <a href="{{ url('/career2') }}" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border-gray-300 text-lg">
+          <a href="{{ url('#') }}" class="h-full w-1/4 rounded flex justify-center items-center border text-red-900 border-gray-300">
               >   
           </a>
         </div>

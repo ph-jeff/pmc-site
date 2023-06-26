@@ -19,7 +19,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="css/home1.css">
-    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/abouts.css">
     <link rel="stylesheet" href="css/partnership.css">
@@ -82,21 +82,13 @@
                             </button>
                         </div>
                     </div>
-                    {{-- <ul class=" w-full text-center flex flex-col justify-center items-center content-center pb-2">        
+                    <ul class=" w-full text-center flex flex-col justify-center items-center content-center pb-2">        
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
                         <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
-                    </ul> --}}
-                    <ul class="flex gap-1 text-center items-center">
-                        <a class="text-white text-base font-semibold  " href="/"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Home </li></a>
-                        <a class="text-white text-base font-semibold" href="/about"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> About </li></a>
-                        <a class="text-white text-base font-semibold" href="/team"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Team </li></a>
-                        <a class="text-white text-base font-semibold" href="/news"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> News </li></a>
-                        <a class="text-white text-base font-semibold" href="/career"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Career </li></a>
-                        <a class="text-white text-base font-semibold" href="/contact"><li class="h-12 w-20 flex justify-center items-center hover:bg-danger"> Contact </li></a>
                     </ul>
                 </div>
                 <button class="float-right md:hidden " @click="hamburger = !hamburger " x-show="!hamburger" >
