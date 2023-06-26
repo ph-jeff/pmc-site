@@ -49,6 +49,9 @@ module.exports = {
       scale: ['hover'],
     },
   },
+  corePlugins: {
+   margin: false,
+  },
 plugins: [
   require('@tailwindcss/line-clamp'),
 ],
