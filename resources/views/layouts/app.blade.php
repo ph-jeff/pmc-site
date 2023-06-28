@@ -35,20 +35,21 @@
     seemore4: false,
     seemore5: false,
     seemore6: false,
+    show: false,
 }">
     <!-- Top Navigation Bar -->
     <div class="h-full bg-danger">
-        <div class="flex w-full h-8 justify-center items-center text-xs md:text-sm">
-            <div class="sm:w-11/12 md:w-11/12 lg:w-9/12 flex justify-between gap-4 md:gap-0 lg:gap-0">
+        <div class="flex items-center justify-center w-full h-8 text-xs md:text-sm">
+            <div class="flex justify-between gap-4 sm:w-11/12 md:w-11/12 lg:w-9/12 md:gap-0 lg:gap-0">
                 <ul class="flex items-center gap-x-2 md:gap-x-3">
-                    <li class="font-semibold text-white hidden sm:block md:block" >Stay connected</li>
-                    <li ><a href="https://www.facebook.com/philippianmarketingcorporation.com.ph/"><img class="h-3 hidden sm:block md:block" src="img/icons/facebook.png" alt="icons"></a></li>
-                    <li><a href="https://www.youtube.com/@philippianmarketingcorpora4715"><img class="h-3 hidden sm:block md:block" src="img/icons/youtube.png" alt="icons"></a></li>
+                    <li class="hidden font-semibold text-white sm:block md:block" >Stay connected</li>
+                    <li ><a href="https://www.facebook.com/philippianmarketingcorporation.com.ph/"><img class="hidden h-3 sm:block md:block" src="img/icons/facebook.png" alt="icons"></a></li>
+                    <li><a href="https://www.youtube.com/@philippianmarketingcorpora4715"><img class="hidden h-3 sm:block md:block" src="img/icons/youtube.png" alt="icons"></a></li>
                 </ul>
                 <ul class="flex items-center gap-x-2 md:gap-0 lg:gap-0">
                     <div class="flex items-center gap-2">
                         <li><a href=""><img class="h-3" src="img/icons/email.png" alt="icons"></a></li>
-                        <li class="font-semibold text-white mr-2 md:mr-5">hrad@philippians.ph</li>
+                        <li class="mr-2 font-semibold text-white md:mr-5">hrad@philippians.ph</li>
                     </div>
                     <div class="flex items-center gap-2">
                         <li><a href=""><img class="h-3" src="img/icons/mobile.png" alt="icons"></a></li>
@@ -59,36 +60,36 @@
         </div>
     </div>
     {{-- Sticky Navbar (Mobile View) --}}
-    <nav class="relative md:hidden w-full h-full sticky top-0 flex justify-between items-center bg-black z-50" x-data="{hamburger: false}" >
-        <div class="flex w-full h-20 justify-center items-center">
-            <div class="w-11/12 md:w-11/12 lg:w-9/12 flex justify-between items-center">
+    <nav class="relative sticky top-0 z-50 flex items-center justify-between w-full h-full bg-black md:hidden" x-data="{hamburger: false}" >
+        <div class="flex items-center justify-center w-full h-20">
+            <div class="flex items-center justify-between w-11/12 md:w-11/12 lg:w-9/12">
                 <div  x-cloak x-show="!hamburger">
                     <a class="" href="/">
                         <img class="" src="img/pmclogo.png" alt="logo" >
                     </a>
                 </div>
-                <div class="absolute top-0 left-0 bg-black z-50 h-50vh block w-full md:hidden" x-cloak x-show="hamburger" >
+                <div class="absolute top-0 left-0 z-50 block w-full bg-black h-50vh md:hidden" x-cloak x-show="hamburger" >
                     <div class="flex justify-center" >
-                        <div class="flex justify-between items-center h-20 w-11/12 md:w-11/12 lg:w-9/12">
+                        <div class="flex items-center justify-between w-11/12 h-20 md:w-11/12 lg:w-9/12">
                             <div class="" x-cloak >
                                 <a class="" href="/">
                                     <img class="" src="img/pmclogo.png" alt="logo" >
                                 </a>
                             </div>
-                            <button class="h-full float-right md:hidden" @click="hamburger = false">
-                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
+                            <button class="float-right h-full md:hidden" @click="hamburger = false">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <ul class=" w-full text-center flex flex-col justify-center items-center content-center pb-2">        
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/"> Home </a></li>
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/about"> About </a></li>
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/team"> Team </a></li>
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/news"> News </a></li>
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/career"> Career </a></li>
-                        <li class="h-12 w-full flex justify-center items-center hover:bg-danger"><a class="text-white text-base font-semibold" href="/contact"> Contact </a></li>
+                    <ul class="flex flex-col items-center content-center justify-center w-full pb-2 text-center ">
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/"> Home </a></li>
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/about"> About </a></li>
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/team"> Team </a></li>
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/news"> News </a></li>
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/career"> Career </a></li>
+                        <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/contact"> Contact </a></li>
                     </ul>
                 </div>
                 <button class="float-right md:hidden " @click="hamburger = !hamburger " x-show="!hamburger" >
@@ -100,22 +101,22 @@
             </div>
         </div>
     </nav>
-    
+
     @yield('main')
 
     <footer >
-        <div class="h-36 md:h-52  w-full flex justify-center bg-cover bg-norepeat " style="background-image: url(img/footer-top.png)">
-            <div class="w-11/12 md:w-9/12 mt-3 md:mt-10 ">
-                <h1 class="text-2xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Get Notified</h1>
-                <p class="text-base md:text-lg text-center mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+        <div class="flex justify-center w-full bg-cover h-36 md:h-52 bg-norepeat " style="background-image: url(img/footer-top.png)">
+            <div class="w-11/12 mt-3 md:w-9/12 md:mt-10 ">
+                <h1 class="text-2xl font-bold text-center text-transparent md:text-4xl bg-clip-text bg-gradient-to-r from-black via-red-900 to-red-800">Get Notified</h1>
+                <p class="mt-2 text-base text-center md:text-lg">Lorem ipsum dolor sit amet, consectetur</p>
                 <div class="flex justify-center gap-2 mt-3">
-                    <div class="h-8 md:h-11 w-40 md:w-60">
-                        <input type="email" id="email" placeholder="Enter your email" class="h-full w-full pl-2">
+                    <div class="w-40 h-8 md:h-11 md:w-60">
+                        <input type="email" id="email" placeholder="Enter your email" class="w-full h-full pl-2">
                     </div>
-                    <div class="h-8 md:h-11 w-20 md:w-28">
-                        <button type="submit" id="submit" onclick="myFunction()" class="h-full w-full font-bebas bg-black text-white text-xl md:text-2xl hover:bg-danger">SUBSCRIBE</button>
+                    <div class="w-20 h-8 md:h-11 md:w-28">
+                        <button type="submit" id="submit" onclick="myFunction()" class="w-full h-full text-xl text-white bg-black font-bebas md:text-2xl hover:bg-danger">SUBSCRIBE</button>
                         <script>
-                            function myFunction(){ 
+                            function myFunction(){
                                 var email = document.getElementById("email").value;
                                 if(email == ""){
                                     Swal.fire(
@@ -135,17 +136,17 @@
                 </div>
             </div>
         </div>
-        <div class="h-24 md:h-32 w-full flex justify-center bg-cover bg-norepeat" style="background-image: url(img/footer-bottom.png)">
-            <div class="w-11/12 md:w-9/12 opacity-75">
-                <div class="h-2/4 border-b border-opacity-50 flex justify-center items-end pb-2 md:pb-3">
+        <div class="flex justify-center w-full h-24 bg-cover md:h-32 bg-norepeat" style="background-image: url(img/footer-bottom.png)">
+            <div class="w-11/12 opacity-75 md:w-9/12">
+                <div class="flex items-end justify-center pb-2 border-b border-opacity-50 h-2/4 md:pb-3">
                     <ul class="flex gap-10 text-white ">
                         <li><a href="/" class="text-xs">Home</a></li>
                         <li><a href="" class="text-xs">Terms and Condition</a></li>
                         <li><a href="" class="text-xs">Privacy</a></li>
                     </ul>
                 </div >
-                <div class="h-2/4 pt-2 md:pt-3 text-white">
-                    <p class="text-center text-xs">Copyright @ 2023. Philippian Marketing Corporation. All Rights Reserved.</p>
+                <div class="pt-2 text-white h-2/4 md:pt-3">
+                    <p class="text-xs text-center">Copyright @ 2023. Philippian Marketing Corporation. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -156,4 +157,4 @@
 </body>
 </html>
 
-           
+
