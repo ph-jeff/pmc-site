@@ -19,7 +19,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="css/home1.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/abouts.css">
     <link rel="stylesheet" href="css/partnership.css">
@@ -35,7 +35,6 @@
     seemore4: false,
     seemore5: false,
     seemore6: false,
-    show: false,
 }">
     <!-- Top Navigation Bar -->
     <div class="h-full bg-danger">
@@ -83,13 +82,21 @@
                             </button>
                         </div>
                     </div>
-                    <ul class="flex flex-col items-center content-center justify-center w-full pb-2 text-center ">
+                    {{-- <ul class="flex flex-col items-center content-center justify-center w-full pb-2 text-center ">
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/"> Home </a></li>
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/about"> About </a></li>
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/team"> Team </a></li>
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/news"> News </a></li>
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/career"> Career </a></li>
                         <li class="flex items-center justify-center w-full h-12 hover:bg-danger"><a class="text-base font-semibold text-white" href="/contact"> Contact </a></li>
+                    </ul> --}}
+                    <ul class="flex items-center gap-1 text-center">
+                        <a class="text-base font-semibold text-white " href="/"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> Home </li></a>
+                        <a class="text-base font-semibold text-white" href="/about"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> About </li></a>
+                        <a class="text-base font-semibold text-white" href="/team"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> Team </li></a>
+                        <a class="text-base font-semibold text-white" href="/news"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> News </li></a>
+                        <a class="text-base font-semibold text-white" href="/career"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> Career </li></a>
+                        <a class="text-base font-semibold text-white" href="/contact"><li class="flex items-center justify-center w-20 h-12 hover:bg-danger"> Contact </li></a>
                     </ul>
                 </div>
                 <button class="float-right md:hidden " @click="hamburger = !hamburger " x-show="!hamburger" >
@@ -151,7 +158,7 @@
             </div>
         </div>
     </footer>
-    <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     @livewireScripts
     @include('layouts.milestone-modal')
 </body>
