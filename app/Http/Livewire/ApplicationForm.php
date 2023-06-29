@@ -2,9 +2,11 @@
 
 namespace App\Http\Livewire;
 
+use App\Enums\CivilStatus;
+use App\Enums\EducationalBackground;
 use Livewire\Component;
 
-class ApplicationForm2 extends Component
+class ApplicationForm extends Component
 {
     public $firstname;
     public $middlename;
@@ -13,28 +15,14 @@ class ApplicationForm2 extends Component
     public $contactnum;
     public $address;
     public $birthdate;
-    
+
     public $character_references;
     public $character;
     public $plan;
     public $status;
-    public $statuses = [
-        'key0' => 'Choose an option',
-        'key1' => 'Maried',
-        'key2' => 'Single',
-        'key3' => 'Window',
-        'key4' => 'Separated',
-        'key5' => 'Others',
-    ];
+    public $statuses;
     public $educational;
-    public $educationals = [
-        'key0' => 'Choose an option',
-        'key1' => 'High School Level/Graduate',
-        'key2' => 'College',
-        'key3' => 'Bachelors Degree',
-        'key4' => 'Vocational Degree',
-        'key5' => 'Postgraduate',
-    ];
+    public $educationals;
     public $position;
     public $positions = [
         'key0' => 'Choose an option',
@@ -60,7 +48,7 @@ class ApplicationForm2 extends Component
         'key4' => 'Other',
     ];
 
-    
+
     // public $resume;
 
     protected $rules = [
@@ -81,7 +69,14 @@ class ApplicationForm2 extends Component
         'plan' => 'required',
     ];
 
-    public function submitForm(){
+    public function mount()
+    {
+        //Statuses will get it's values from CivilStatus Enum
+        $this->statuses = CivilStatus::asSelectArray();
+        $this->educationals = EducationalBackground::asSelectArray();
+    }
+    public function submitForm()
+    {
         $this->validate();
         session()->flash('successMessage', 'Validation successful!');
 
@@ -90,6 +85,6 @@ class ApplicationForm2 extends Component
     }
     public function render()
     {
-        return view('livewire.application-form2');
+        return view('livewire.application-form')->extends('layouts.app')->section('main');
     }
 }

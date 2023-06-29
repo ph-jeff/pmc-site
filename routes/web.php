@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ApplicationForm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,9 +38,7 @@ Route::get('/news3', function () {
 Route::get('/career', function () {
     return view('career');
 });
-Route::get('/application-form', function () {
-    return view('form/application_form');
-});
+Route::get('/application-form', ApplicationForm::class);
 Route::get('/career2', function () {
     return view('career-pagination/career2');
 });
