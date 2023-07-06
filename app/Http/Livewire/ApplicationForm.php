@@ -5,9 +5,13 @@ namespace App\Http\Livewire;
 use App\Enums\CivilStatus;
 use App\Enums\EducationalBackground;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class ApplicationForm extends Component
 {
+
+    use WithFileUploads;
+    public $career;
     public $firstname;
     public $middlename;
     public $lastname;
@@ -39,7 +43,7 @@ class ApplicationForm extends Component
         'key3' => 'Linkedin',
         'key4' => 'Jobstreet',
     ];
-    public $Recruiter;
+    public $recruiter;
     public $Recruiters = [
         'key0' => 'Choose an option',
         'key1' => 'Honey',
@@ -48,6 +52,7 @@ class ApplicationForm extends Component
         'key4' => 'Other',
     ];
 
+    public $file;
 
     // public $resume;
 
@@ -69,6 +74,10 @@ class ApplicationForm extends Component
         'plan' => 'required',
     ];
 
+    public function updatedFile($value)
+    {
+        dd($value);
+    }
     public function mount()
     {
         //Statuses will get it's values from CivilStatus Enum
